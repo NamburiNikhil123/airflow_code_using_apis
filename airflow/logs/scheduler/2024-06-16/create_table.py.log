@@ -1,0 +1,20 @@
+[2024-06-16T07:25:30.459+0000] {processor.py:161} INFO - Started process (PID=6380) to work on /opt/airflow/dags/create_table.py
+[2024-06-16T07:25:30.459+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table.py for tasks to queue
+[2024-06-16T07:25:30.461+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:25:30.461+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_table.py
+[2024-06-16T07:25:30.463+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/create_table.py
+[2024-06-16T07:25:30.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table.py took 0.031 seconds
+[2024-06-16T07:26:00.692+0000] {processor.py:161} INFO - Started process (PID=6400) to work on /opt/airflow/dags/create_table.py
+[2024-06-16T07:26:00.693+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table.py for tasks to queue
+[2024-06-16T07:26:00.694+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:00.694+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_table.py
+[2024-06-16T07:26:00.696+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/create_table.py
+[2024-06-16T07:26:00.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table.py took 0.023 seconds
+[2024-06-16T07:26:30.923+0000] {processor.py:161} INFO - Started process (PID=6408) to work on /opt/airflow/dags/create_table.py
+[2024-06-16T07:26:30.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table.py for tasks to queue
+[2024-06-16T07:26:30.926+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:30.925+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_table.py
+[2024-06-16T07:26:30.930+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/create_table.py
+[2024-06-16T07:26:30.956+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table.py took 0.047 seconds
+[2024-06-16T07:27:01.185+0000] {processor.py:161} INFO - Started process (PID=6416) to work on /opt/airflow/dags/create_table.py
+[2024-06-16T07:27:01.186+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_table.py for tasks to queue
+[2024-06-16T07:27:01.188+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:27:01.188+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_table.py
+[2024-06-16T07:27:01.191+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/create_table.py
+[2024-06-16T07:27:01.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_table.py took 0.034 seconds

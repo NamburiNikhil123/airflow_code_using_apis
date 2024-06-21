@@ -1,0 +1,262 @@
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 11:03:42.628627
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 11:04:02.834892
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 11:05:05.114571
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 11:06:04.674714
+-------------------
+
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:25:06.755736: HTTPConnectionPool(host='172.240.2.5', port=8080): Max retries exceeded with url: /api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7812aea360f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:25:08.002351
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:26:04.028303: HTTPConnectionPool(host='172.240.2.5', port=8080): Max retries exceeded with url: /api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7812aea33d40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:26:05.329283
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:27:06.220275: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:27:07.425651
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:28:06.523421: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:28:07.981104
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:29:05.323272: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:29:06.615007
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:30:04.524814: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:30:05.769403
+The DAG demo_dag_for_alerting_apis_final was skipped 3 times continuously
+The DAG demo_dag_for_alerting_final_1 was skipped 3 times continuously
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:31:05.267560: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:31:06.378391
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:32:04.837866: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:32:05.937963
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:33:07.122293: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:33:08.281264
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:34:05.097505: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:34:06.368463
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:35:05.335201: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:35:06.682783
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:36:07.142050: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:36:08.289352
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:37:05.782518: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:37:07.477559
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:38:05.962772: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:38:06.774535
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:39:06.838212: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:39:08.114609
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:40:04.749569: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:40:06.575898
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:41:05.653523: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:41:06.808462
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:42:06.000653: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:42:07.141724
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:43:05.199460: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:43:06.146242
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:44:05.867825: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:44:07.515669
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:45:04.935471: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:45:05.761780
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:46:05.116304: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:46:06.295098
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:47:05.810079: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:47:06.935151
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:48:06.788051: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:48:08.266179
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-19 18:49:05.475650: 404 Client Error: NOT FOUND for url: http://airflow:airflow@172.240.2.4:8080/api/v1/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-19 18:49:06.690487
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:22:50.424972
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:23:03.791376
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:24:03.048609
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:25:07.284249
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:26:07.084850
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:27:06.410466
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:28:06.197233
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:29:06.965714
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:30:06.609224
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:31:07.479824
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:32:07.281655
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:33:07.741106
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:34:05.863008
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:35:07.395285
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:36:07.825313
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:37:07.250856
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:38:06.634947
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:39:07.362082
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:40:06.042324
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:41:06.931581
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:42:07.438727
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:43:07.039272
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:44:06.223642
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:45:06.887801
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:46:07.487742
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:47:06.000648
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:48:06.957732
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:49:06.507129
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:50:07.256911
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:51:05.925614
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:52:06.309336
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:53:05.784087
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:54:06.625380
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:55:06.167388
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:56:06.926875
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:57:05.877468
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:58:07.304216
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 07:59:06.589795
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:00:05.879519
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:01:05.936791
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:02:06.660470
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:03:06.035293
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:04:06.750778
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:05:06.476869
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:06:06.169847
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:07:05.939700
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:08:07.728303
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:09:07.526192
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:10:05.504255
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:11:06.781565
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:12:06.969634
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:13:06.744390
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:14:06.528836
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:15:05.769732
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:16:07.056310
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:17:06.301660
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:18:06.516157
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:19:06.869291
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:20:07.080370
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 08:21:06.039400
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:16:02.345785
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:16:02.403636
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:16:05.053246
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:17:05.923164
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:18:06.578950
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:19:05.798540
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:20:07.154694
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:21:06.412733
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:22:05.886147
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:23:06.643116
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:24:06.564551
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:25:07.192915
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:26:06.238200
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:27:06.595737
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:28:07.021582
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:29:06.280249
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:30:06.275579
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:31:07.020259
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:32:06.702080
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:33:06.944985
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:34:05.687618
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:35:06.433352
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:36:06.002100
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:37:05.539545
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:38:06.110982
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:39:06.405308
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:40:05.480725
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:41:06.808479
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:42:07.193838
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:43:06.632751
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:44:06.426892
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:45:06.926559
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:46:06.830518
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:47:05.860381
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:48:06.264920
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:49:06.247855
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:50:06.688026
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:51:06.169940
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:52:06.476889
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:53:06.877788
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:54:06.034998
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:55:06.407430
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:56:05.981092
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:57:06.234427
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:58:06.235218
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 09:59:06.218237
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:00:06.963780
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:01:06.496144
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:02:06.361948
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:03:06.634041
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:04:06.723912
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:05:06.777202
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:06:06.797245
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:07:06.289322
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:08:05.667893
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:09:05.915677
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:10:07.110771
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:11:07.230953
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:12:06.122830
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:13:07.255707
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:14:06.392844
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:15:06.224791
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:16:06.400473
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:17:06.656106
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:18:05.538744
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:19:06.719095
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:20:06.673382
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:21:06.031096
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:22:07.581025
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:23:06.549007
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:24:06.998614
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:25:05.969246
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:26:07.140741
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:27:07.278284
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:28:06.481212
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:29:06.086432
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:30:05.719181
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:31:05.889973
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:32:06.381738
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:33:06.569696
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:34:06.634747
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 10:35:06.715244
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 16:57:43.019959
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 16:58:06.153320
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 17:33:19.129744
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 17:33:19.137295
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 17:34:06.505154
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 17:46:24.103938
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 17:55:50.555903
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 17:56:03.852017
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 17:57:03.651668
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:38:04.156716
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:38:04.262738
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:38:05.504955: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772fff0fdbb0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:38:05.504973: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772ffef78680>: Failed to establish a new connection: [Errno 111] Connection refused'))
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:39:02.920753
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:39:02.927058: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772fff007830>: Failed to establish a new connection: [Errno 111] Connection refused'))
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:40:03.925382
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:40:03.958887: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772fff0fc3b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:41:03.633428
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:41:03.637384: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772fff076c00>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Failed to run demo_dag_for_alerting_final_1 with task check_previous_run_status at 2024-06-20 18:42:02.985247
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:42:04.296453: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772fff09c7d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Failed to run demo_dag_for_alerting_final_1 with task check_previous_run_status at 2024-06-20 18:43:03.449327
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:43:04.811372: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772ffef36db0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Failed to check DAG demo_dag_for_alerting_apis_final status at 2024-06-20 18:44:03.026810: HTTPConnectionPool(host='172.240.2.4', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x772fff0fc7d0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Failed to run demo_dag_for_alerting_final_1 with task check_previous_run_status at 2024-06-20 18:44:25.901598
+Failed to run demo_dag_for_alerting_final_1 with task check_previous_run_status at 2024-06-20 18:45:02.376652
+The DAG demo_dag_for_alerting_apis_final was skipped at 2024-06-20 18:47:29.137983
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:48:03.347742
+The DAG demo_dag_for_alerting_apis_final was skipped at 2024-06-20 18:48:03.918581
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:49:03.288654
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:50:04.246848
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:51:04.266417
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:52:03.589258
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:53:03.307471
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:54:04.430285
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:55:03.226793
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:56:03.590735
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:57:04.015973
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:58:03.226446
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 18:59:04.336689
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:00:03.848038
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:01:03.580278
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:02:03.370307
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:03:03.361572
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:04:02.700718
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:05:02.921191
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:06:02.952531
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:07:03.272358
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:08:02.456949
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:09:03.858890
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:10:03.027870
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:11:03.360881
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:12:03.695072
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:13:03.143452
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:14:03.411526
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:15:02.826755
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:16:03.580098
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:17:03.232414
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:18:03.954420
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:19:03.294254
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:20:03.749480
+The DAG demo_dag_for_alerting_final_1 was skipped at 2024-06-20 19:21:03.037709

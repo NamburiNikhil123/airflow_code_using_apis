@@ -1,0 +1,21 @@
+[2024-06-18T11:50:02.727+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-18T11:50:02.753+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_skipped.skip_run scheduled__2024-06-18T11:49:00+00:00 [queued]>
+[2024-06-18T11:50:02.763+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_skipped.skip_run scheduled__2024-06-18T11:49:00+00:00 [queued]>
+[2024-06-18T11:50:02.764+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-18T11:50:02.776+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): skip_run> on 2024-06-18 11:49:00+00:00
+[2024-06-18T11:50:02.781+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=5148) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-18T11:50:02.781+0000] {standard_task_runner.py:63} INFO - Started process 5149 to run task
+[2024-06-18T11:50:02.782+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_skipped', 'skip_run', 'scheduled__2024-06-18T11:49:00+00:00', '--job-id', '719', '--raw', '--subdir', 'DAGS_FOLDER/alerting_skipped.py', '--cfg-path', '/tmp/tmpbj142u5o']
+[2024-06-18T11:50:02.783+0000] {standard_task_runner.py:91} INFO - Job 719: Subtask skip_run
+[2024-06-18T11:50:02.821+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_skipped.skip_run scheduled__2024-06-18T11:49:00+00:00 [running]> on host fa5c5d972e05
+[2024-06-18T11:50:02.899+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_skipped' AIRFLOW_CTX_TASK_ID='skip_run' AIRFLOW_CTX_EXECUTION_DATE='2024-06-18T11:49:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-18T11:49:00+00:00'
+[2024-06-18T11:50:02.900+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-18T11:50:02.923+0000] {helper_functions.py:66} ERROR - Failed to check skipped status for alerting_skipped with task skip_run: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /api/v1/dags/alerting_skipped/dagRuns/manual__2024-06-18T11:49:51.561287+00:00/taskInstances/skip_run (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x70e7bb43b1a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-06-18T11:50:02.924+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-18T11:50:02.924+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-18T11:50:02.932+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=alerting_skipped, task_id=skip_run, run_id=scheduled__2024-06-18T11:49:00+00:00, execution_date=20240618T114900, start_date=20240618T115002, end_date=20240618T115002
+[2024-06-18T11:50:02.955+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-18T11:50:02.969+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-18T11:50:02.971+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

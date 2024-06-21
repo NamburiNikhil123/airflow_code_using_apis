@@ -1,0 +1,32 @@
+[2024-06-13T07:03:01.761+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-13T07:03:01.800+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_example1.insert_json manual__2024-06-13T07:02:56.064709+00:00 [queued]>
+[2024-06-13T07:03:01.813+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_example1.insert_json manual__2024-06-13T07:02:56.064709+00:00 [queued]>
+[2024-06-13T07:03:01.814+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-13T07:03:01.836+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): insert_json> on 2024-06-13 07:02:56.064709+00:00
+[2024-06-13T07:03:01.844+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1188) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-13T07:03:01.845+0000] {standard_task_runner.py:63} INFO - Started process 1189 to run task
+[2024-06-13T07:03:01.845+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***_example1', 'insert_json', 'manual__2024-06-13T07:02:56.064709+00:00', '--job-id', '249', '--raw', '--subdir', 'DAGS_FOLDER/file_jsons_to_postgres.py', '--cfg-path', '/tmp/tmp_gsxzybj']
+[2024-06-13T07:03:01.846+0000] {standard_task_runner.py:91} INFO - Job 249: Subtask insert_json
+[2024-06-13T07:03:01.896+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow_example1.insert_json manual__2024-06-13T07:02:56.064709+00:00 [running]> on host 8cc8d7c9eee4
+[2024-06-13T07:03:01.983+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***_example1' AIRFLOW_CTX_TASK_ID='insert_json' AIRFLOW_CTX_EXECUTION_DATE='2024-06-13T07:02:56.064709+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-13T07:02:56.064709+00:00'
+[2024-06-13T07:03:01.984+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-13T07:03:02.012+0000] {file_jsons_to_postgres.py:109} INFO - Inserting entry: {'name': 'Prudhvi', 'email': '6sbnfr$@k.eo', 'date': '2024-06-13'}
+[2024-06-13T07:03:02.013+0000] {file_jsons_to_postgres.py:109} INFO - Inserting entry: {'name': 'Davis', 'email': '0evge@eev.io', 'date': '2024/06/13'}
+[2024-06-13T07:03:02.014+0000] {file_jsons_to_postgres.py:109} INFO - Inserting entry: {'name': 'McLaine', 'email': 'u@uxf.kz', 'date': '2024/06/13'}
+[2024-06-13T07:03:02.014+0000] {file_jsons_to_postgres.py:109} INFO - Inserting entry: {'name': 'Anthati', 'email': 'j$k6@xav.ewj', 'date': '06.13.24'}
+[2024-06-13T07:03:02.014+0000] {file_jsons_to_postgres.py:109} INFO - Inserting entry: {'name': 'Samala', 'email': '1ul.@tmukheqt.qp', 'date': '06.13.24'}
+[2024-06-13T07:03:02.015+0000] {file_jsons_to_postgres.py:109} INFO - Inserting entry: {'name': 'Nimmaturi', 'email': 'yzd@kbbh.wk', 'date': '2024-06-13'}
+[2024-06-13T07:03:02.015+0000] {file_jsons_to_postgres.py:109} INFO - Inserting entry: {'name': 'Vinay', 'email': 's@bguhriwst.bu', 'date': '13.06.2024'}
+[2024-06-13T07:03:02.016+0000] {file_jsons_to_postgres.py:114} ERROR - Error inserting data: date/time field value out of range: "13.06.2024"
+LINE 2: ..., email, date) VALUES ('Vinay', 's@bguhriwst.bu', '13.06.202...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+
+[2024-06-13T07:03:02.016+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-13T07:03:02.017+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-13T07:03:02.027+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=***_example1, task_id=insert_json, run_id=manual__2024-06-13T07:02:56.064709+00:00, execution_date=20240613T070256, start_date=20240613T070301, end_date=20240613T070302
+[2024-06-13T07:03:02.059+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-13T07:03:02.076+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-13T07:03:02.077+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

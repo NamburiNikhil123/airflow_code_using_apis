@@ -1,0 +1,28 @@
+[2024-06-18T05:15:02.391+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-18T05:15:02.412+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_skipped.check_last_3runs_status scheduled__2024-06-18T05:10:00+00:00 [queued]>
+[2024-06-18T05:15:02.420+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_skipped.check_last_3runs_status scheduled__2024-06-18T05:10:00+00:00 [queued]>
+[2024-06-18T05:15:02.420+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-18T05:15:02.433+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): check_last_3runs_status> on 2024-06-18 05:10:00+00:00
+[2024-06-18T05:15:02.438+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=91) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-18T05:15:02.439+0000] {standard_task_runner.py:63} INFO - Started process 92 to run task
+[2024-06-18T05:15:02.439+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_skipped', 'check_last_3runs_status', 'scheduled__2024-06-18T05:10:00+00:00', '--job-id', '404', '--raw', '--subdir', 'DAGS_FOLDER/alerting_skipped.py', '--cfg-path', '/tmp/tmp6jscah3d']
+[2024-06-18T05:15:02.440+0000] {standard_task_runner.py:91} INFO - Job 404: Subtask check_last_3runs_status
+[2024-06-18T05:15:02.478+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_skipped.check_last_3runs_status scheduled__2024-06-18T05:10:00+00:00 [running]> on host fa5c5d972e05
+[2024-06-18T05:15:02.561+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_skipped' AIRFLOW_CTX_TASK_ID='check_last_3runs_status' AIRFLOW_CTX_EXECUTION_DATE='2024-06-18T05:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-18T05:10:00+00:00'
+[2024-06-18T05:15:02.562+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-18T05:15:02.574+0000] {alerting_skipped.py:35} INFO - Checking the last 3 runs status for DAG: alerting_skipped
+[2024-06-18T05:15:02.582+0000] {alerting_skipped.py:42} INFO - DAG Run ID: manual__2024-06-18T05:13:06.617406+00:00, Execution Date: 2024-06-18 05:13:06.617406+00:00, State: success
+[2024-06-18T05:15:02.591+0000] {alerting_skipped.py:52} INFO - Task Instance State for task1: skipped
+[2024-06-18T05:15:02.591+0000] {alerting_skipped.py:42} INFO - DAG Run ID: scheduled__2024-06-18T05:10:00+00:00, Execution Date: 2024-06-18 05:10:00+00:00, State: running
+[2024-06-18T05:15:02.594+0000] {alerting_skipped.py:52} INFO - Task Instance State for task1: None
+[2024-06-18T05:15:02.594+0000] {alerting_skipped.py:42} INFO - DAG Run ID: scheduled__2024-06-18T05:05:00+00:00, Execution Date: 2024-06-18 05:05:00+00:00, State: success
+[2024-06-18T05:15:02.596+0000] {alerting_skipped.py:52} INFO - Task Instance State for task1: skipped
+[2024-06-18T05:15:02.597+0000] {alerting_skipped.py:56} INFO - Task 'task1' has been skipped 2 times in the last 3 runs.
+[2024-06-18T05:15:02.597+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-18T05:15:02.598+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-18T05:15:02.605+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=alerting_skipped, task_id=check_last_3runs_status, run_id=scheduled__2024-06-18T05:10:00+00:00, execution_date=20240618T051000, start_date=20240618T051502, end_date=20240618T051502
+[2024-06-18T05:15:02.653+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-18T05:15:02.675+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-18T05:15:02.677+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
