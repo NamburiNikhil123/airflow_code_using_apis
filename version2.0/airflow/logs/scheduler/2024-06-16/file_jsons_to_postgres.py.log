@@ -1,0 +1,28 @@
+[2024-06-16T07:25:30.451+0000] {processor.py:161} INFO - Started process (PID=6379) to work on /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:25:30.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/file_jsons_to_postgres.py for tasks to queue
+[2024-06-16T07:25:30.455+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:25:30.454+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:25:30.482+0000] {processor.py:840} INFO - DAG(s) 'airflow_example' retrieved from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:25:30.521+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:25:30.521+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-16T07:25:30.596+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:25:30.596+0000] {dag.py:3954} INFO - Setting next_dagrun for airflow_example to 2024-06-16 00:00:00+00:00, run_after=2024-06-17 00:00:00+00:00
+[2024-06-16T07:25:30.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/file_jsons_to_postgres.py took 0.191 seconds
+[2024-06-16T07:26:00.687+0000] {processor.py:161} INFO - Started process (PID=6399) to work on /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:26:00.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/file_jsons_to_postgres.py for tasks to queue
+[2024-06-16T07:26:00.690+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:00.690+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:26:00.708+0000] {processor.py:840} INFO - DAG(s) 'airflow_example' retrieved from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:26:00.739+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:00.739+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-16T07:26:00.763+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:00.762+0000] {dag.py:3954} INFO - Setting next_dagrun for airflow_example to 2024-06-16 00:00:00+00:00, run_after=2024-06-17 00:00:00+00:00
+[2024-06-16T07:26:00.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/file_jsons_to_postgres.py took 0.103 seconds
+[2024-06-16T07:26:30.913+0000] {processor.py:161} INFO - Started process (PID=6407) to work on /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:26:30.916+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/file_jsons_to_postgres.py for tasks to queue
+[2024-06-16T07:26:30.918+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:30.918+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:26:30.947+0000] {processor.py:840} INFO - DAG(s) 'airflow_example' retrieved from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:26:30.993+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:30.992+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-16T07:26:31.028+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:26:31.028+0000] {dag.py:3954} INFO - Setting next_dagrun for airflow_example to 2024-06-16 00:00:00+00:00, run_after=2024-06-17 00:00:00+00:00
+[2024-06-16T07:26:31.057+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/file_jsons_to_postgres.py took 0.154 seconds
+[2024-06-16T07:27:01.182+0000] {processor.py:161} INFO - Started process (PID=6415) to work on /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:27:01.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/file_jsons_to_postgres.py for tasks to queue
+[2024-06-16T07:27:01.186+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:27:01.186+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:27:01.222+0000] {processor.py:840} INFO - DAG(s) 'airflow_example' retrieved from /opt/airflow/dags/file_jsons_to_postgres.py
+[2024-06-16T07:27:01.261+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:27:01.261+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-16T07:27:01.296+0000] {logging_mixin.py:188} INFO - [2024-06-16T07:27:01.296+0000] {dag.py:3954} INFO - Setting next_dagrun for airflow_example to 2024-06-16 00:00:00+00:00, run_after=2024-06-17 00:00:00+00:00
+[2024-06-16T07:27:01.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/file_jsons_to_postgres.py took 0.154 seconds

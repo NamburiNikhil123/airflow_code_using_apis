@@ -1,0 +1,29 @@
+[2024-06-24T14:00:01.948+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-24T14:00:01.983+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_active_dags scheduled__2024-06-24T13:45:00+00:00 [queued]>
+[2024-06-24T14:00:01.999+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_active_dags scheduled__2024-06-24T13:45:00+00:00 [queued]>
+[2024-06-24T14:00:01.999+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-24T14:00:02.026+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_all_active_dags> on 2024-06-24 13:45:00+00:00
+[2024-06-24T14:00:02.033+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=5644) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-24T14:00:02.034+0000] {standard_task_runner.py:63} INFO - Started process 5651 to run task
+[2024-06-24T14:00:02.034+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_all_dags_using_apis', 'get_all_active_dags', 'scheduled__2024-06-24T13:45:00+00:00', '--job-id', '3670', '--raw', '--subdir', 'DAGS_FOLDER/alerting_all_dags_using_apis.py', '--cfg-path', '/tmp/tmp2it81h8z']
+[2024-06-24T14:00:02.035+0000] {standard_task_runner.py:91} INFO - Job 3670: Subtask get_all_active_dags
+[2024-06-24T14:00:02.099+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_all_dags_using_apis.get_all_active_dags scheduled__2024-06-24T13:45:00+00:00 [running]> on host bf895605831d
+[2024-06-24T14:00:02.199+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_all_dags_using_apis' AIRFLOW_CTX_TASK_ID='get_all_active_dags' AIRFLOW_CTX_EXECUTION_DATE='2024-06-24T13:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-24T13:45:00+00:00'
+[2024-06-24T14:00:02.200+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-24T14:00:02.212+0000] {helper_functions.py:194} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags?only_active=truee
+[2024-06-24T14:00:02.218+0000] {helper_functions.py:207} ERROR - HTTP error occurred: 400 Client Error: BAD REQUEST for url: http://***:***@172.240.2.5:8080/api/v1/dags?only_active=truee
+Traceback (most recent call last):
+  File "/opt/airflow/dags/helper_functions.py", line 198, in get_all_active_dags
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: BAD REQUEST for url: http://***:***@172.240.2.5:8080/api/v1/dags?only_active=truee
+[2024-06-24T14:00:02.219+0000] {helper_functions.py:148} ERROR - Failed to run alerting_all_dags_using_apis with task get_all_active_dags: 400 Client Error: BAD REQUEST for url: http://***:***@172.240.2.5:8080/api/v1/dags?only_active=truee
+[2024-06-24T14:00:02.219+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-24T14:00:02.220+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-24T14:00:02.228+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=alerting_all_dags_using_apis, task_id=get_all_active_dags, run_id=scheduled__2024-06-24T13:45:00+00:00, execution_date=20240624T134500, start_date=20240624T140001, end_date=20240624T140002
+[2024-06-24T14:00:02.247+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-24T14:00:02.282+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-24T14:00:02.283+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

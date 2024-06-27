@@ -1,0 +1,21 @@
+[2024-06-13T06:59:40.133+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-13T06:59:40.162+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_example1.filter_data manual__2024-06-13T06:59:37.949746+00:00 [queued]>
+[2024-06-13T06:59:40.171+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_example1.filter_data manual__2024-06-13T06:59:37.949746+00:00 [queued]>
+[2024-06-13T06:59:40.171+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-13T06:59:40.187+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): filter_data> on 2024-06-13 06:59:37.949746+00:00
+[2024-06-13T06:59:40.194+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1135) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-13T06:59:40.195+0000] {standard_task_runner.py:63} INFO - Started process 1136 to run task
+[2024-06-13T06:59:40.196+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***_example1', 'filter_data', 'manual__2024-06-13T06:59:37.949746+00:00', '--job-id', '243', '--raw', '--subdir', 'DAGS_FOLDER/file_jsons_to_postgres.py', '--cfg-path', '/tmp/tmp3jeo2yvc']
+[2024-06-13T06:59:40.197+0000] {standard_task_runner.py:91} INFO - Job 243: Subtask filter_data
+[2024-06-13T06:59:40.243+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow_example1.filter_data manual__2024-06-13T06:59:37.949746+00:00 [running]> on host 8cc8d7c9eee4
+[2024-06-13T06:59:40.338+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***_example1' AIRFLOW_CTX_TASK_ID='filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-06-13T06:59:37.949746+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-13T06:59:37.949746+00:00'
+[2024-06-13T06:59:40.339+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-13T06:59:40.381+0000] {file_jsons_to_postgres.py:62} INFO - Filtered valid data: [{'name': 'Prudhvi', 'email': '6sbnfr$@k.eo', 'date': '2024-06-13'}, {'name': 'Davis', 'email': '0evge@eev.io', 'date': '2024/06/13'}, {'name': 'McLaine', 'email': 'u@uxf.kz', 'date': '2024/06/13'}, {'name': 'Anthati', 'email': 'j$k6@xav.ewj', 'date': '06.13.24'}, {'name': 'Samala', 'email': '1ul.@tmukheqt.qp', 'date': '06.13.24'}, {'name': 'Nimmaturi', 'email': 'yzd@kbbh.wk', 'date': '24-06-13'}, {'name': 'Vinay', 'email': 's@bguhriwst.bu', 'date': '13.06.2024'}, {'name': 'Soukhya', 'email': '3#j*%g@qhlygjuef.pe', 'date': '13/06/24'}, {'name': 'Sree', 'email': '7$g@hunrf.qtr', 'date': '13/06/24'}, {'name': 'Koti', 'email': '5@amcnzjr.ula', 'date': '13.06.2024'}, {'name': 'Zainuddin', 'email': 'ih0t8m@bxfkjg.szm', 'date': '13-06-2024'}, {'name': 'Majji', 'email': '3ace@nfpacjxq.cf', 'date': '06.13.24'}, {'name': 'Masthan', 'email': 'z08mon@koymqgwwq.jgp', 'date': '06/13/2024'}]
+[2024-06-13T06:59:40.395+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-13T06:59:40.396+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-13T06:59:40.404+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=***_example1, task_id=filter_data, run_id=manual__2024-06-13T06:59:37.949746+00:00, execution_date=20240613T065937, start_date=20240613T065940, end_date=20240613T065940
+[2024-06-13T06:59:40.449+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-13T06:59:40.483+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-13T06:59:40.484+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

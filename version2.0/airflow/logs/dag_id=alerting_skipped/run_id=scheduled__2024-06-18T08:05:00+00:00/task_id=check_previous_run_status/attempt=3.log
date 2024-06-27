@@ -1,0 +1,43 @@
+[2024-06-18T08:12:04.252+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-18T08:12:04.273+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_skipped.check_previous_run_status scheduled__2024-06-18T08:05:00+00:00 [queued]>
+[2024-06-18T08:12:04.280+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_skipped.check_previous_run_status scheduled__2024-06-18T08:05:00+00:00 [queued]>
+[2024-06-18T08:12:04.281+0000] {taskinstance.py:2306} INFO - Starting attempt 3 of 6
+[2024-06-18T08:12:04.294+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): check_previous_run_status> on 2024-06-18 08:05:00+00:00
+[2024-06-18T08:12:04.301+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1851) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-18T08:12:04.302+0000] {standard_task_runner.py:63} INFO - Started process 1852 to run task
+[2024-06-18T08:12:04.302+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_skipped', 'check_previous_run_status', 'scheduled__2024-06-18T08:05:00+00:00', '--job-id', '443', '--raw', '--subdir', 'DAGS_FOLDER/alerting_skipped.py', '--cfg-path', '/tmp/tmpwmebldgc']
+[2024-06-18T08:12:04.302+0000] {standard_task_runner.py:91} INFO - Job 443: Subtask check_previous_run_status
+[2024-06-18T08:12:04.337+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_skipped.check_previous_run_status scheduled__2024-06-18T08:05:00+00:00 [running]> on host fa5c5d972e05
+[2024-06-18T08:12:04.414+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_skipped' AIRFLOW_CTX_TASK_ID='check_previous_run_status' AIRFLOW_CTX_EXECUTION_DATE='2024-06-18T08:05:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-18T08:05:00+00:00'
+[2024-06-18T08:12:04.415+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-18T08:12:04.426+0000] {baseoperator.py:399} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-06-18T08:12:04.426+0000] {python.py:237} INFO - Done. Returned value was: check_last_run_status
+[2024-06-18T08:12:04.426+0000] {branch.py:36} INFO - Branch into check_last_run_status
+[2024-06-18T08:12:04.426+0000] {skipmixin.py:178} INFO - Following branch check_last_run_status
+[2024-06-18T08:12:04.427+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-18T08:12:04.435+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 269, in execute
+    return self.do_branch(context, super().execute(context))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/branch.py", line 37, in do_branch
+    self.skip_all_except(context["ti"], branches_to_execute)
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/skipmixin.py", line 215, in skip_all_except
+    raise AirflowException(
+airflow.exceptions.AirflowException: 'branch_task_ids' must contain only valid task_ids. Invalid tasks found: {'check_last_run_status'}.
+[2024-06-18T08:12:04.439+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=alerting_skipped, task_id=check_previous_run_status, run_id=scheduled__2024-06-18T08:05:00+00:00, execution_date=20240618T080500, start_date=20240618T081204, end_date=20240618T081204
+[2024-06-18T08:12:04.448+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 443 for task check_previous_run_status ('branch_task_ids' must contain only valid task_ids. Invalid tasks found: {'check_last_run_status'}.; 1852)
+[2024-06-18T08:12:04.475+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-18T08:12:04.500+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-18T08:12:04.502+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

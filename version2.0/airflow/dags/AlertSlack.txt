@@ -1,0 +1,19 @@
+The DAG demo_dag_for_alerting_apis_final was skipped at 2024-06-27 05:48:06.176871
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-27 05:48:07.373527
+The DAG demo_dag_for_alerting_final was skipped 3 times continuously at 2024-06-27 05:49:04.851605
+The DAG demo_dag_for_alerting_apis_final was skipped in the last 3 runs continuously at 2024-06-27 05:49:05.422128
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-27 05:49:06.060817
+The DAG demo_dag_for_alerting_final was skipped 4 times continuously at 2024-06-27 05:50:05.928594
+The DAG demo_dag_for_alerting_apis_final was skipped in the last 3 runs continuously at 2024-06-27 05:50:06.596247
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-27 05:50:06.728890
+The DAG demo_dag_for_alerting_final was skipped 5 times continuously at 2024-06-27 05:51:05.206925
+The DAG demo_dag_for_alerting_apis_final was skipped in the last 3 runs continuously at 2024-06-27 05:51:05.892059
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-27 05:51:06.527517
+The DAG demo_dag_for_alerting_apis_final has reached its threshold skips, please look into it
+The DAG demo_dag_for_alerting_final has reached its threshold skips, please look into it
+Failed to run alerting_all_dags_using_apis with task get_all_active_dags at 2024-06-27 05:52:02.249885
+Failed to run alerting_all_dags_using_apis with task get_all_dag_ids_last_limit_run_ids at 2024-06-27 05:52:27.890634
+Failed to run alerting_all_dags_using_apis with task get_all_dagruns_task_instances at 2024-06-27 05:53:00.451483
+The DAG alerting_all_dags_using_apis has reached its threshold skips, please look into it
+The DAG demo_dag_for_alerting_apis_final has reached its threshold skips, please look into it
+The DAG demo_dag_for_alerting_final has reached its threshold skips, please look into it

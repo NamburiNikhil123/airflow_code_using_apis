@@ -1,0 +1,24 @@
+[2024-06-24T11:30:12.592+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-24T11:30:12.622+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.alert_all_continuous_skipped_dags scheduled__2024-06-24T11:15:00+00:00 [queued]>
+[2024-06-24T11:30:12.632+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.alert_all_continuous_skipped_dags scheduled__2024-06-24T11:15:00+00:00 [queued]>
+[2024-06-24T11:30:12.633+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-24T11:30:12.650+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): alert_all_continuous_skipped_dags> on 2024-06-24 11:15:00+00:00
+[2024-06-24T11:30:12.657+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3604) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-24T11:30:12.659+0000] {standard_task_runner.py:63} INFO - Started process 3605 to run task
+[2024-06-24T11:30:12.659+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_all_dags_using_apis', 'alert_all_continuous_skipped_dags', 'scheduled__2024-06-24T11:15:00+00:00', '--job-id', '3605', '--raw', '--subdir', 'DAGS_FOLDER/alerting_all_dags_using_apis.py', '--cfg-path', '/tmp/tmpbzy2uid0']
+[2024-06-24T11:30:12.661+0000] {standard_task_runner.py:91} INFO - Job 3605: Subtask alert_all_continuous_skipped_dags
+[2024-06-24T11:30:12.711+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_all_dags_using_apis.alert_all_continuous_skipped_dags scheduled__2024-06-24T11:15:00+00:00 [running]> on host bf895605831d
+[2024-06-24T11:30:12.850+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_all_dags_using_apis' AIRFLOW_CTX_TASK_ID='alert_all_continuous_skipped_dags' AIRFLOW_CTX_EXECUTION_DATE='2024-06-24T11:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-24T11:15:00+00:00'
+[2024-06-24T11:30:12.851+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-24T11:30:12.874+0000] {helper_functions.py:247} INFO - The DAG demo_dag_for_alerting_apis_final has reached its threshold skips, please look into it
+
+[2024-06-24T11:30:12.875+0000] {helper_functions.py:247} INFO - The DAG demo_dag_for_alerting_final_1 has reached its threshold skips, please look into it
+
+[2024-06-24T11:30:12.875+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-24T11:30:12.876+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-24T11:30:12.891+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=alerting_all_dags_using_apis, task_id=alert_all_continuous_skipped_dags, run_id=scheduled__2024-06-24T11:15:00+00:00, execution_date=20240624T111500, start_date=20240624T113012, end_date=20240624T113012
+[2024-06-24T11:30:12.953+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-24T11:30:12.982+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-24T11:30:12.983+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

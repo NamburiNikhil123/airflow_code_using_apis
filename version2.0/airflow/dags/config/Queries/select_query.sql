@@ -1,0 +1,1 @@
+SELECT continous_skip_count FROM skipped_data WHERE dag_id=%s AND task_id=%s
