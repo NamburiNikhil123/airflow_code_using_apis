@@ -1,0 +1,21 @@
+[2024-06-12T05:20:00.775+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-12T05:20:00.799+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_json_to_postgres.process_json manual__2024-06-12T05:16:33.941081+00:00 [queued]>
+[2024-06-12T05:20:00.807+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_json_to_postgres.process_json manual__2024-06-12T05:16:33.941081+00:00 [queued]>
+[2024-06-12T05:20:00.807+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 6
+[2024-06-12T05:20:00.821+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_json> on 2024-06-12 05:16:33.941081+00:00
+[2024-06-12T05:20:00.826+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=332) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-12T05:20:00.827+0000] {standard_task_runner.py:63} INFO - Started process 333 to run task
+[2024-06-12T05:20:00.827+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'process_json_to_postgres', 'process_json', 'manual__2024-06-12T05:16:33.941081+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/process_json_to_postgres.py', '--cfg-path', '/tmp/tmpnbhmqrra']
+[2024-06-12T05:20:00.828+0000] {standard_task_runner.py:91} INFO - Job 101: Subtask process_json
+[2024-06-12T05:20:00.867+0000] {task_command.py:426} INFO - Running <TaskInstance: process_json_to_postgres.process_json manual__2024-06-12T05:16:33.941081+00:00 [running]> on host 7bea3768514b
+[2024-06-12T05:20:00.942+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='process_json_to_postgres' AIRFLOW_CTX_TASK_ID='process_json' AIRFLOW_CTX_EXECUTION_DATE='2024-06-12T05:16:33.941081+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-12T05:16:33.941081+00:00'
+[2024-06-12T05:20:00.942+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-12T05:20:00.954+0000] {process_json_to_postgres.py:58} ERROR - Error processing JSON data: Expecting ',' delimiter: line 5 column 54 (char 212)
+[2024-06-12T05:20:00.954+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-12T05:20:00.955+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-12T05:20:00.963+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=process_json_to_postgres, task_id=process_json, run_id=manual__2024-06-12T05:16:33.941081+00:00, execution_date=20240612T051633, start_date=20240612T052000, end_date=20240612T052000
+[2024-06-12T05:20:01.000+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-12T05:20:01.018+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-12T05:20:01.019+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

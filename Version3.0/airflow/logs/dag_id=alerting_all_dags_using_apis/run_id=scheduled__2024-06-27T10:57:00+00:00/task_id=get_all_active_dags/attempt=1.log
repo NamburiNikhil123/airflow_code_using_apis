@@ -1,0 +1,81 @@
+[2024-06-27T11:00:02.791+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-27T11:00:02.823+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_active_dags scheduled__2024-06-27T10:57:00+00:00 [queued]>
+[2024-06-27T11:00:02.834+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_active_dags scheduled__2024-06-27T10:57:00+00:00 [queued]>
+[2024-06-27T11:00:02.835+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-27T11:00:02.852+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_all_active_dags> on 2024-06-27 10:57:00+00:00
+[2024-06-27T11:00:02.857+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3738) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-27T11:00:02.858+0000] {standard_task_runner.py:63} INFO - Started process 3739 to run task
+[2024-06-27T11:00:02.858+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_all_dags_using_apis', 'get_all_active_dags', 'scheduled__2024-06-27T10:57:00+00:00', '--job-id', '4701', '--raw', '--subdir', 'DAGS_FOLDER/alerting_all_dags_using_apis.py', '--cfg-path', '/tmp/tmpfaia4v23']
+[2024-06-27T11:00:02.859+0000] {standard_task_runner.py:91} INFO - Job 4701: Subtask get_all_active_dags
+[2024-06-27T11:00:02.909+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_all_dags_using_apis.get_all_active_dags scheduled__2024-06-27T10:57:00+00:00 [running]> on host eeacb89bcfc1
+[2024-06-27T11:00:03.045+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_all_dags_using_apis' AIRFLOW_CTX_TASK_ID='get_all_active_dags' AIRFLOW_CTX_EXECUTION_DATE='2024-06-27T10:57:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-27T10:57:00+00:00'
+[2024-06-27T11:00:03.046+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-27T11:00:03.066+0000] {helper_functions.py:271} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags?only_active=truesdfg
+[2024-06-27T11:00:03.073+0000] {helper_functions.py:274} ERROR - Received status code 400 from http://***:***@172.240.2.5:8080/api/v1/dags?only_active=truesdfg
+[2024-06-27T11:00:03.073+0000] {helper_functions.py:283} ERROR - Failed to get active DAGs: Failed to get active DAGs, status code: 400
+[2024-06-27T11:00:03.074+0000] {helper_functions.py:284} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/helper_functions.py", line 275, in get_all_active_dags
+    raise AirflowFailException(f"Failed to get active DAGs, status code: {response.status_code}")
+***.exceptions.AirflowFailException: Failed to get active DAGs, status code: 400
+
+[2024-06-27T11:00:03.074+0000] {helper_functions.py:224} ERROR - Failed to run alerting_all_dags_using_apis with task get_all_active_dags: Failed to get active DAGs: Failed to get active DAGs, status code: 400
+[2024-06-27T11:00:03.075+0000] {helper_functions.py:225} ERROR - Traceback (most recent call last):
+  File "/opt/***/dags/helper_functions.py", line 275, in get_all_active_dags
+    raise AirflowFailException(f"Failed to get active DAGs, status code: {response.status_code}")
+***.exceptions.AirflowFailException: Failed to get active DAGs, status code: 400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/***/dags/helper_functions.py", line 221, in alert_notif_failure_api
+    result = func(**kwargs)
+             ^^^^^^^^^^^^^^
+  File "/opt/***/dags/helper_functions.py", line 285, in get_all_active_dags
+    raise AirflowFailException(f"Failed to get active DAGs: {e}")
+***.exceptions.AirflowFailException: Failed to get active DAGs: Failed to get active DAGs, status code: 400
+
+[2024-06-27T11:00:03.075+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-27T11:00:03.075+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/helper_functions.py", line 275, in get_all_active_dags
+    raise AirflowFailException(f"Failed to get active DAGs, status code: {response.status_code}")
+airflow.exceptions.AirflowFailException: Failed to get active DAGs, status code: 400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/airflow/dags/helper_functions.py", line 221, in alert_notif_failure_api
+    result = func(**kwargs)
+             ^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/helper_functions.py", line 285, in get_all_active_dags
+    raise AirflowFailException(f"Failed to get active DAGs: {e}")
+airflow.exceptions.AirflowFailException: Failed to get active DAGs: Failed to get active DAGs, status code: 400
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/helper_functions.py", line 228, in alert_notif_failure_api
+    raise AirflowFailException(f"The DAG {dag_id} is failed because of the TASK {task_id} is failed")
+airflow.exceptions.AirflowFailException: The DAG alerting_all_dags_using_apis is failed because of the TASK get_all_active_dags is failed
+[2024-06-27T11:00:03.086+0000] {taskinstance.py:1206} INFO - Immediate failure requested. Marking task as FAILED. dag_id=alerting_all_dags_using_apis, task_id=get_all_active_dags, run_id=scheduled__2024-06-27T10:57:00+00:00, execution_date=20240627T105700, start_date=20240627T110002, end_date=20240627T110003
+[2024-06-27T11:00:03.101+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4701 for task get_all_active_dags (The DAG alerting_all_dags_using_apis is failed because of the TASK get_all_active_dags is failed; 3739)
+[2024-06-27T11:00:03.116+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-27T11:00:03.143+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-27T11:00:03.148+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

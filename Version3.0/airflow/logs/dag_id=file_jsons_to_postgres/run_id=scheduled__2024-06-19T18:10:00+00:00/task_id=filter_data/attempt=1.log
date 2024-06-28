@@ -1,0 +1,371 @@
+[2024-06-19T18:19:50.046+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-19T18:19:50.068+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: file_jsons_to_postgres.filter_data scheduled__2024-06-19T18:10:00+00:00 [queued]>
+[2024-06-19T18:19:50.078+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: file_jsons_to_postgres.filter_data scheduled__2024-06-19T18:10:00+00:00 [queued]>
+[2024-06-19T18:19:50.079+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-19T18:19:50.096+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): filter_data> on 2024-06-19 18:10:00+00:00
+[2024-06-19T18:19:50.100+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1011) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-19T18:19:50.101+0000] {standard_task_runner.py:63} INFO - Started process 1012 to run task
+[2024-06-19T18:19:50.102+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'file_jsons_to_postgres', 'filter_data', 'scheduled__2024-06-19T18:10:00+00:00', '--job-id', '1620', '--raw', '--subdir', 'DAGS_FOLDER/file_jsons_to_postgres.py', '--cfg-path', '/tmp/tmpzl5fxrb1']
+[2024-06-19T18:19:50.102+0000] {standard_task_runner.py:91} INFO - Job 1620: Subtask filter_data
+[2024-06-19T18:19:50.139+0000] {task_command.py:426} INFO - Running <TaskInstance: file_jsons_to_postgres.filter_data scheduled__2024-06-19T18:10:00+00:00 [running]> on host e66744caf823
+[2024-06-19T18:19:50.218+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='file_jsons_to_postgres' AIRFLOW_CTX_TASK_ID='filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-06-19T18:10:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-19T18:10:00+00:00'
+[2024-06-19T18:19:50.218+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-19T18:19:50.252+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.252+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.252+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.253+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.253+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.253+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.253+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.254+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.254+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.254+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.254+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.255+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.255+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.255+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.256+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.256+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.256+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.257+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.257+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.257+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.257+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.258+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.258+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.258+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.259+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.259+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.259+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.260+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.260+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.260+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.261+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.261+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.261+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.262+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.262+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.262+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.262+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.263+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.263+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.263+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.264+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.264+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.264+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.265+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.265+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.266+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.266+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.266+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.267+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.267+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.267+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.268+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.268+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.269+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.269+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.269+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.269+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.270+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.270+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.270+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.271+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.271+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.271+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.272+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.272+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.272+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.273+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.273+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.273+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.274+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.274+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.274+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.274+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.275+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.275+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.275+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.276+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.276+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.276+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.276+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.277+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.277+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.277+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.278+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.278+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.278+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.279+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.279+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.279+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.280+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.280+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.280+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.281+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.281+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.281+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.282+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.282+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.282+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.283+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.283+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.283+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.283+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.284+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.284+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.284+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.284+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.285+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.285+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.285+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.286+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.286+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.286+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.287+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.287+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.287+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.288+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.288+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.288+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.288+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.289+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.289+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.289+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.290+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.290+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.290+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.291+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.291+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.291+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.292+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.292+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.292+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.293+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.293+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.293+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.293+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.294+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.294+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.294+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.295+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.295+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.295+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.295+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.296+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.296+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.296+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.297+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.297+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.297+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.298+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.298+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.298+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.299+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.299+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.299+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.300+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.300+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.300+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.301+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.301+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.301+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.302+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.302+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.302+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.303+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.303+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.303+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.303+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.304+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.304+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.304+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.305+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.305+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.305+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.306+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.306+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.306+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.306+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.307+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.307+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.308+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.308+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.308+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.308+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.309+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.309+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.309+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.310+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.310+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.310+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.311+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.311+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.311+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.312+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.312+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.312+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.313+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.313+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.313+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.314+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.314+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.314+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.315+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.315+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.315+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.315+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.316+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.316+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.316+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.317+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.317+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.317+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.317+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.318+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.318+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.318+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.318+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.319+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.319+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.319+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.320+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.320+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.320+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.321+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.321+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.321+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.321+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.322+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.322+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.322+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.323+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.323+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.323+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.323+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.324+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.324+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.324+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.325+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.325+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.325+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.325+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.326+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.326+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.326+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.327+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.327+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.327+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.328+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.328+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.329+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.329+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.329+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.330+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.330+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.330+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.330+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.331+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.331+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.331+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.332+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.332+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.332+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.333+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.333+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.333+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.334+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.334+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.334+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.334+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.335+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.335+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.335+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.336+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.336+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.337+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.337+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.338+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.338+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.339+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.339+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.340+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.341+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.341+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.342+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.342+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.343+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.343+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.343+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.344+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.345+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.345+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.346+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.346+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.347+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.347+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.348+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.348+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.349+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.350+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13.06.2024 using format %d.%m.%Y
+[2024-06-19T18:19:50.350+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.351+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.351+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.352+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.352+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.353+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.353+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.354+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.354+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.355+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.355+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.356+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.356+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.357+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.357+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.358+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.358+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.359+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.360+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.360+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.360+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.361+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.361+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 24-06-13 using format %d-%m-%y
+[2024-06-19T18:19:50.362+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.362+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.363+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.363+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-13-01 using format %Y-%d-%m
+[2024-06-19T18:19:50.364+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.365+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-13 15:30:00 with available formats
+[2024-06-19T18:19:50.365+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.365+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.366+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.367+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.367+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.367+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13-06-2024 using format %d-%m-%Y
+[2024-06-19T18:19:50.368+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.369+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.369+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.369+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06/13/2024 using format %m/%d/%Y
+[2024-06-19T18:19:50.370+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.370+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-02-30 with available formats
+[2024-06-19T18:19:50.371+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.371+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.372+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-06-32 with available formats
+[2024-06-19T18:19:50.372+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024-06-13 using format %Y-%m-%d
+[2024-06-19T18:19:50.373+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.373+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024-00-01 with available formats
+[2024-06-19T18:19:50.374+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 06.13.24 using format %m.%d.%y
+[2024-06-19T18:19:50.375+0000] {file_jsons_to_postgres.py:53} WARNING - Failed to parse date 2024/15/06 with available formats
+[2024-06-19T18:19:50.375+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.376+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 2024/06/13 using format %Y/%m/%d
+[2024-06-19T18:19:50.376+0000] {file_jsons_to_postgres.py:49} INFO - Successfully parsed date 13/06/24 using format %d/%m/%y
+[2024-06-19T18:19:50.377+0000] {file_jsons_to_postgres.py:71} INFO - Filtered valid data: [{'name': 'Sekhar', 'email': 'f5gqiw!vz4@kowtjsn.mb', 'date': '2024-06-13'}, {'name': 'Praneeth', 'email': 'jj%fpfe!2a@ltuyxhh.vw', 'date': '2024-06-13'}, {'name': 'Kiran', 'email': 'b@kbzv.jg', 'date': '2024-06-13'}, {'name': 'Ushasri', 'email': 'dfkcn@wpdrh.fbg', 'date': '2024-06-13'}, {'name': 'Nagavamsi', 'email': '44ldpo@wci.zl', 'date': '2024-06-13'}, {'name': 'Nadikatla', 'email': 'h#zn1l3pu@hstx.rf', 'date': '2024-06-13'}, {'name': 'Ushasri', 'email': 'jemhz4^i!#@nns.ld', 'date': '2024-01-13'}, {'name': 'Masthan', 'email': '6b5v@jkaznzpsw.bw', 'date': '2024-06-13'}, {'name': 'Soukhya', 'email': 'ihww2@noqe.mf', 'date': '2024-01-13'}, {'name': 'Prasanna', 'email': 'l&@cbclt.keo', 'date': '2024-06-13'}, {'name': 'Dathrika', 'email': 'f.z$ig!x&!@qow.iz', 'date': '2024-06-13'}, {'name': 'Spandana', 'email': 'caonya#wz@mzkmcma.fe', 'date': '2024-06-13'}, {'name': 'Saiteja', 'email': 'tbyhsqy@juh.dae', 'date': '2024-06-13'}, {'name': 'Vadlamudi', 'email': 'tjcuy^8f5v@wcujzcxm.zi', 'date': '2024-06-13'}, {'name': 'Bahoju', 'email': 'r&lx00k0e1@xadkfvwpy.ecq', 'date': '2024-06-13'}, {'name': 'Udugula', 'email': 'mu67%^thy@nvji.tw', 'date': '2024-06-13'}, {'name': 'Chandra', 'email': '5nss&r*!d@glt.bjk', 'date': '2024-06-13'}, {'name': 'Machupalli', 'email': 'dcufgw@g.de', 'date': '2024-06-13'}, {'name': 'Karnati', 'email': 'y@ezzgxyr.wly', 'date': '2024-06-13'}, {'name': 'Moru', 'email': '3&bs@zzn.we', 'date': '2024-06-13'}, {'name': 'Vankamamidi', 'email': 'y0decbadz@ycuuckeix.fc', 'date': '2024-06-13'}, {'name': 'Mohammad', 'email': 'pr*@vvfgsrgy.ltl', 'date': '2024-06-13'}, {'name': 'Saiteja', 'email': 'r5$yd&.@jotkhbpro.kpp', 'date': '2024-06-13'}, {'name': 'Suma', 'email': 'y@a.aen', 'date': '2013-06-24'}, {'name': 'Akhilesh', 'email': 'kx@nlqudvj.yyk', 'date': '2024-06-13'}, {'name': 'Adepu', 'email': 'h57!p^plx6@mx.ahk', 'date': '2024-06-13'}, {'name': 'Vadlamudi', 'email': 'h@fsodmmbxi.ya', 'date': '2024-06-13'}, {'name': 'Chandrakanth', 'email': 'ze@kbc.ulm', 'date': '2024-06-13'}, {'name': 'Shareef', 'email': 'ki9hv5@mjugdkxl.qa', 'date': '2024-06-13'}, {'name': 'Komati', 'email': '10$*u@c.qt', 'date': '2024-06-13'}, {'name': 'Anthati', 'email': '4@yjlw.fx', 'date': '2024-06-13'}, {'name': 'Nikhil', 'email': 'cokto@zbpiwpi.mb', 'date': '2024-06-13'}, {'name': 'Chandrakanth', 'email': 'z.4k#@qwpml.bl', 'date': '2024-06-13'}, {'name': 'Chirneni', 'email': 'kv3*qy@jxoy.fxy', 'date': '2024-06-13'}, {'name': 'Sree', 'email': 'ou@xfemwoclu.hm', 'date': '2024-06-13'}, {'name': 'Bahoju', 'email': '4!w7@gezqtv.hk', 'date': '2024-06-13'}, {'name': 'Karnati', 'email': 'ot@lwj.dc', 'date': '2024-06-13'}, {'name': 'Suma', 'email': 'wj1k*!@vwejlvvp.hvi', 'date': '2024-06-13'}, {'name': 'Davis', 'email': '23@faijzja.nt', 'date': '2024-06-13'}, {'name': 'Krishna', 'email': 'q#$$j@yjxdinptj.gvl', 'date': '2024-06-13'}, {'name': 'Sree', 'email': 'gvy&%4pec@g.wmh', 'date': '2024-06-13'}, {'name': 'Sekhar', 'email': 'uv@afafb.rg', 'date': '2024-06-13'}, {'name': 'Aishwarya', 'email': 'rp5@pccierqb.vxb', 'date': '2024-06-13'}, {'name': 'Narandas', 'email': '4gct!j@begxgno.si', 'date': '2024-06-13'}, {'name': 'Jyothi', 'email': '8r5xyb.!@bji.su', 'date': '2013-06-24'}, {'name': 'Brahmadevara', 'email': '9%0@wxjgvhn.kt', 'date': '2024-06-13'}, {'name': 'Gopalakrishna', 'email': 'bw@nnadav.it', 'date': '2024-06-13'}, {'name': 'Krishna', 'email': 'u7s5y@rtam.qi', 'date': '2024-01-13'}, {'name': 'Goud', 'email': 'e^@woyafva.yxu', 'date': '2024-06-13'}, {'name': 'Komati', 'email': 'wcom.3@qbyppcsc.yvg', 'date': '2024-06-13'}, {'name': 'Srikanth', 'email': '21fjr8@ufvf.nd', 'date': '2024-06-13'}, {'name': 'Moru', 'email': 'jxwn@vytncdk.ch', 'date': '2024-06-13'}, {'name': 'Rayapusetty', 'email': 'r&@h.djw', 'date': '2024-06-13'}, {'name': 'Machupalli', 'email': 'b$2@whc.pa', 'date': '2024-06-13'}, {'name': 'Prudhvi', 'email': '50d@mi.uk', 'date': '2024-06-13'}, {'name': 'Vankamamidi', 'email': '9@quplf.tuo', 'date': '2024-06-13'}, {'name': 'Kambhampati', 'email': 'g03$u2x5o@ijep.gl', 'date': '2024-06-13'}, {'name': 'Sundar', 'email': 'd3ng8xv@npciy.jf', 'date': '2024-06-13'}, {'name': 'Vishnu', 'email': 'dyclw@qwm.fm', 'date': '2024-06-13'}, {'name': 'Pavan', 'email': 'lmgv043q^s@haebqn.ajl', 'date': '2024-06-13'}, {'name': 'Vinay', 'email': 'j&#hmz@xc.vev', 'date': '2024-01-13'}, {'name': 'Majji', 'email': 'n!$ji@xah.mmi', 'date': '2024-01-13'}, {'name': 'Keerthana', 'email': 'n9hb@j.wjz', 'date': '2013-06-24'}, {'name': 'Adepu', 'email': '1x2fpbmxo@odswnvhzy.lyj', 'date': '2024-06-13'}, {'name': 'Vemuri', 'email': 'm$@hhndqwuov.ijr', 'date': '2024-06-13'}, {'name': 'Sekhar', 'email': 'e@vrevyu.hsv', 'date': '2024-06-13'}, {'name': 'Udugula', 'email': '6d&i@jswggj.np', 'date': '2024-06-13'}, {'name': 'Vinay', 'email': '8wq&$f@hwpdqmszg.udh', 'date': '2024-06-13'}, {'name': 'Vadlamudi', 'email': '3obud^v%@akykqyk.zb', 'date': '2024-06-13'}, {'name': 'Koti', 'email': 'o@chjwllurx.khj', 'date': '2024-06-13'}, {'name': 'Lakshmi', 'email': 'wx%la6c@svvgyqar.pnb', 'date': '2024-06-13'}, {'name': 'Vankamamidi', 'email': 'qm9it5403a@mpqh.ne', 'date': '2024-06-13'}, {'name': 'Brahmadevara', 'email': '7i9j@fgvh.fvw', 'date': '2024-06-13'}, {'name': 'Ramya', 'email': '1z@d.ms', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': '4we@extjg.bs', 'date': '2024-06-13'}, {'name': 'Kambhampati', 'email': 'z@atze.vbh', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': 'j2l&$diihs@xy.xln', 'date': '2024-06-13'}, {'name': 'Sree', 'email': 'csqdsvr.ch@mp.cb', 'date': '2024-06-13'}, {'name': 'Srikanth', 'email': 'uz!*101@ie.aum', 'date': '2013-06-24'}, {'name': 'Bharath', 'email': 'rvecd^^@zdomsy.hz', 'date': '2013-06-24'}, {'name': 'Narandas', 'email': 'in5!4ay9fc@bxtsj.lt', 'date': '2024-06-13'}, {'name': 'Nagavamsi', 'email': '6vo^yn$1^@irvyvnaci.oqr', 'date': '2013-06-24'}, {'name': 'Nadikatla', 'email': 'cdzhu803gh@xk.st', 'date': '2024-06-13'}, {'name': 'Zainuddin', 'email': 'i#r&h@jsokx.dq', 'date': '2024-06-13'}, {'name': 'Thej', 'email': 'y*j1lsdfi4@wvw.yi', 'date': '2013-06-24'}, {'name': 'Nagavamsi', 'email': '05380!o.d1@nu.lg', 'date': '2024-06-13'}, {'name': 'Vemuri', 'email': '4ygv@ujxosenc.vj', 'date': '2024-06-13'}, {'name': 'Moru', 'email': '7ozln$fxk9@ywgwaeyx.fe', 'date': '2024-06-13'}, {'name': 'Uday', 'email': 'ilqb&kl0@pyzwu.jb', 'date': '2024-06-13'}, {'name': 'Mohammad', 'email': 'ditbf#ra@madjr.sm', 'date': '2024-06-13'}, {'name': 'Shaik', 'email': '3@yn.hy', 'date': '2024-06-13'}, {'name': 'Soukhya', 'email': 'ga0e@uzfj.mi', 'date': '2024-06-13'}, {'name': 'Prasanna', 'email': 'm!3ze0@aqfww.uxu', 'date': '2024-06-13'}, {'name': 'Ganji', 'email': '8$5av%1@cwad.ywc', 'date': '2024-06-13'}, {'name': 'Chandra', 'email': 'iw#!yt1wo@xv.rf', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': '4qmem&1hx7@eyj.okp', 'date': '2024-06-13'}, {'name': 'Anthati', 'email': 'pfx!k@hzwrzo.iaa', 'date': '2024-06-13'}, {'name': 'Goud', 'email': 'mq7.o5vz^#@nt.rqf', 'date': '2024-06-13'}, {'name': 'Shashank', 'email': 'ousks@nvxwrlk.si', 'date': '2024-06-13'}, {'name': 'Zainuddin', 'email': 'gk0s987@aa.lnx', 'date': '2024-06-13'}, {'name': 'Adepu', 'email': 'xo31hid@isuzeis.lns', 'date': '2024-06-13'}, {'name': 'Kuppireddy', 'email': 'ah9pr@rajnzlvp.suc', 'date': '2024-06-13'}, {'name': 'Saiteja', 'email': 'zt3@vkehzvlky.ty', 'date': '2024-06-13'}, {'name': 'Goud', 'email': '4a5kpe1n@yfl.trh', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': 'zqm@scl.km', 'date': '2024-06-13'}, {'name': 'Nadikatla', 'email': 'pjbd.t@my.df', 'date': '2024-06-13'}, {'name': 'Anthati', 'email': '1bp1rx.@s.me', 'date': '2024-06-13'}, {'name': 'Narandas', 'email': '7@z.gki', 'date': '2024-06-13'}, {'name': 'Bharath', 'email': 'n%j7ro0@uf.fp', 'date': '2024-06-13'}, {'name': 'Komati', 'email': '73*d@zy.phd', 'date': '2013-06-24'}, {'name': 'Chandrakanth', 'email': '32w@elrrxocmi.eza', 'date': '2024-06-13'}, {'name': 'Gopalakrishna', 'email': 'aajiu@lnev.ufk', 'date': '2024-01-13'}, {'name': 'Ramya', 'email': 'd.8fq!63@zchoa.pz', 'date': '2024-01-13'}, {'name': 'Arun', 'email': '7f3@cxoqlke.yk', 'date': '2024-06-13'}, {'name': 'Pavan', 'email': '2k&y#&2j@drb.nzl', 'date': '2024-06-13'}, {'name': 'Sree', 'email': 'rbp4xu5rto@j.kf', 'date': '2024-06-13'}, {'name': 'Bhargavi', 'email': 'ry3*d@ylrl.gol', 'date': '2024-06-13'}, {'name': 'Sanka', 'email': 'nl@bksbfrr.nc', 'date': '2024-06-13'}, {'name': 'Kiran', 'email': 'l8n%7x4@mrd.hio', 'date': '2024-01-13'}, {'name': 'Nagavamsi', 'email': 'k^w0s81i@vtdwjpi.tp', 'date': '2024-01-13'}, {'name': 'Sadvika', 'email': 'g&yg8@uidd.rmd', 'date': '2024-01-13'}, {'name': 'Addala', 'email': 'atqsgotlzm@nuwiifpnf.fb', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': '3qxh*@jalrtcsz.cm', 'date': '2024-06-13'}, {'name': 'Samala', 'email': 'ra.f@vzfvgvgj.sxy', 'date': '2024-06-13'}, {'name': 'Davis', 'email': 'ace.#a&eqq@dxqyze.xpb', 'date': '2024-06-13'}, {'name': 'Komati', 'email': 'p7u#zrj2if@n.uto', 'date': '2024-06-13'}, {'name': 'Prudhvi', 'email': 'v9f9qas@yg.lj', 'date': '2024-06-13'}, {'name': 'Adepu', 'email': 'r*8v@udcsu.bp', 'date': '2024-06-13'}, {'name': 'Kambhampati', 'email': 'c&k@zrahmwzr.gvg', 'date': '2024-06-13'}, {'name': 'Gopalakrishna', 'email': '7m@ihwlcf.jj', 'date': '2013-06-24'}, {'name': 'Raghu', 'email': 'd8xzd@bwrulrw.ghv', 'date': '2024-06-13'}, {'name': 'Sekhar', 'email': 'ruh9m5#&c@aycfulbk.wxo', 'date': '2024-06-13'}, {'name': 'Thej', 'email': 'kytemkeol@eyc.bu', 'date': '2024-06-13'}, {'name': 'Naga', 'email': 'm@o.ads', 'date': '2024-06-13'}, {'name': 'Ushasri', 'email': 'exdq01h@mo.tob', 'date': '2024-06-13'}, {'name': 'Arun', 'email': '570gjb1hgx@kgeyx.jo', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': '79dz!q@bomxmlp.vsi', 'date': '2013-06-24'}, {'name': 'Kuppireddy', 'email': 'n#f0%n^y&@tkdikebg.dip', 'date': '2024-06-13'}, {'name': 'Ganji', 'email': 'rd#9s@rctobises.xx', 'date': '2024-06-13'}, {'name': 'Narandas', 'email': 'hnv.n5k*og@gjyhhxohm.gqh', 'date': '2024-06-13'}, {'name': 'Thej', 'email': 'wqqxvh7f1@juqec.sw', 'date': '2024-06-13'}, {'name': 'Maneesha', 'email': '6@kevxzdvw.ir', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': 'b660h7nqib@ajzytpjkz.kwx', 'date': '2024-06-13'}, {'name': 'Vemuri', 'email': 'y3ljf2@qefwgcgx.pzm', 'date': '2024-06-13'}, {'name': 'Maneesha', 'email': 'a4zfppg*@aox.jej', 'date': '2024-06-13'}, {'name': 'Naga', 'email': 'v*l7%$kuz@mcrfvey.gtq', 'date': '2024-06-13'}, {'name': 'Nikhil', 'email': 'w0@fhgpxgtqu.sdo', 'date': '2024-06-13'}, {'name': 'Kuruva', 'email': 'xdlj@nzxhe.dx', 'date': '2024-06-13'}, {'name': 'Uday', 'email': 'u66.t8ou@ikbhoui.yj', 'date': '2024-06-13'}, {'name': 'Podipireddi', 'email': 'sjej2!p@npizdxriy.bap', 'date': '2024-01-13'}, {'name': 'Gopalakrishna', 'email': 'n@kqfbznc.rcl', 'date': '2024-01-13'}, {'name': 'Addala', 'email': 'y@sutozx.nm', 'date': '2024-06-13'}, {'name': 'Raghu', 'email': 'l9k5oll5!@xvtl.ytx', 'date': '2024-06-13'}, {'name': 'Nikhil', 'email': 'j@uq.mo', 'date': '2024-06-13'}, {'name': 'Anyam', 'email': 'h9jk@d.lvi', 'date': '2024-06-13'}, {'name': 'Masthan', 'email': 'g0@er.ovp', 'date': '2024-06-13'}, {'name': 'McLaine', 'email': '636@nikft.zvb', 'date': '2024-01-13'}, {'name': 'Sivani', 'email': 'tga@ev.jpm', 'date': '2024-06-13'}, {'name': 'Sree', 'email': 'oka&gb%s@z.ge', 'date': '2024-01-13'}, {'name': 'Chirneni', 'email': 'c@mj.os', 'date': '2024-01-13'}, {'name': 'Praneeth', 'email': 'a%*@fdvqggh.on', 'date': '2024-06-13'}, {'name': 'Samala', 'email': 'dpd%08yi@olssjp.vyz', 'date': '2024-06-13'}, {'name': 'Koti', 'email': 'swk*mcl&!@etsrxnhrq.piw', 'date': '2024-06-13'}, {'name': 'Chirneni', 'email': 'hsh5xvw@dfqptcxn.pb', 'date': '2024-06-13'}, {'name': 'Kuruva', 'email': 'k@mg.ve', 'date': '2024-06-13'}, {'name': 'Brahmadevara', 'email': 'fg6f#9@cws.oz', 'date': '2024-01-13'}, {'name': 'Vadlamudi', 'email': 'nl.oxhzn@csmz.cg', 'date': '2013-06-24'}, {'name': 'Anwesh', 'email': '5uk@qi.ond', 'date': '2024-06-13'}, {'name': 'Komati', 'email': 'ixam@vqw.bsf', 'date': '2024-06-13'}, {'name': 'Shaik', 'email': '9!fp%wg@ly.okr', 'date': '2024-06-13'}, {'name': 'Keerthana', 'email': 'th@hpyehou.xv', 'date': '2024-06-13'}, {'name': 'Ushasri', 'email': 'rgqd.u93fl@xvcrrex.tdu', 'date': '2024-06-13'}, {'name': 'Nikhil', 'email': 'zau@systwn.sp', 'date': '2024-06-13'}, {'name': 'Brahmadevara', 'email': 'sycnmzb9@gxupggxhw.gg', 'date': '2013-06-24'}, {'name': 'Krishna', 'email': 'kmp1.%@fubdrrokn.ib', 'date': '2013-06-24'}, {'name': 'Saiteja', 'email': '0j*q723j%@kg.qu', 'date': '2024-06-13'}, {'name': 'Narandas', 'email': 'z3@pzn.ht', 'date': '2024-06-13'}, {'name': 'Ramya', 'email': 'rzsu8b@lneilk.efu', 'date': '2024-06-13'}, {'name': 'Spandana', 'email': 'ny25pkmi@kuhfkiee.ql', 'date': '2024-01-13'}, {'name': 'Pavan', 'email': 'pwynq!y2@wjogpe.ku', 'date': '2024-06-13'}, {'name': 'Ramya', 'email': 'lzq^46@rpjpoedo.vj', 'date': '2024-06-13'}, {'name': 'Shashank', 'email': 'ziu.wz@e.ywq', 'date': '2024-06-13'}, {'name': 'Nikhitha', 'email': '2!i@vtatqbs.gxq', 'date': '2024-06-13'}, {'name': 'Chary', 'email': 'he@hk.xtq', 'date': '2024-01-13'}, {'name': 'Kaithapu', 'email': 'u4uypr0pps@vxd.ulc', 'date': '2013-06-24'}, {'name': 'Bhargavi', 'email': '506m9z$s8u@vvfr.rjl', 'date': '2024-06-13'}, {'name': 'Jyothi', 'email': '6yv8j&$@ew.xhp', 'date': '2024-01-13'}, {'name': 'Pinninti', 'email': 'g7z4!x@zfxqycaxh.dm', 'date': '2024-06-13'}, {'name': 'Nagavamsi', 'email': 'hxh5jvj0r@u.kko', 'date': '2024-06-13'}, {'name': 'Goud', 'email': '1se!3x0a!2@fcbetzuw.wsh', 'date': '2024-06-13'}, {'name': 'Praneeth', 'email': 'jaq@vq.lfl', 'date': '2024-06-13'}, {'name': 'Mohammad', 'email': 'w@hfrz.vde', 'date': '2024-06-13'}, {'name': 'Kambhampati', 'email': 'd#^u6gm0l@ucan.cwe', 'date': '2024-06-13'}, {'name': 'Kambhampati', 'email': 'e@oiqkreei.cp', 'date': '2024-06-13'}, {'name': 'Karnati', 'email': '17sg@vm.dq', 'date': '2024-06-13'}, {'name': 'Srikanth', 'email': '1*$yc9x0a@pewlcmv.dba', 'date': '2024-06-13'}, {'name': 'Addala', 'email': 'o^@rtgqvifvv.frl', 'date': '2013-06-24'}, {'name': 'Dathrika', 'email': 'snq0@vzuylor.wg', 'date': '2024-06-13'}, {'name': 'Lakshmi', 'email': '8l6t7z%15%@jrzrgf.yb', 'date': '2024-06-13'}, {'name': 'Jyothi', 'email': 'a5@kaab.to', 'date': '2024-01-13'}, {'name': 'Kunche', 'email': 'sb!v4@ew.owb', 'date': '2024-01-13'}, {'name': 'Masthan', 'email': '64srjrv@iwnxirgz.xy', 'date': '2024-06-13'}, {'name': 'Vasamsetti', 'email': 'u6.9le@iqrru.yt', 'date': '2024-06-13'}, {'name': 'Praneeth', 'email': 'pp7!q@uxmzfr.vi', 'date': '2024-06-13'}, {'name': 'Chary', 'email': 'kmdpp54@tcgmq.ge', 'date': '2024-06-13'}, {'name': 'Aishwarya', 'email': '3pnu7%@x.qaw', 'date': '2024-06-13'}, {'name': 'Soukhya', 'email': 'pnn@f.ye', 'date': '2024-01-13'}, {'name': 'Naga', 'email': 'b56pv@ztlbnie.ju', 'date': '2024-06-13'}, {'name': 'McLaine', 'email': 'd@vaphajcqc.it', 'date': '2013-06-24'}, {'name': 'Reddy', 'email': 't!@zdgoix.pw', 'date': '2024-06-13'}, {'name': 'Maneesha', 'email': '0%b^t4^#yj@ohv.jqa', 'date': '2024-06-13'}, {'name': 'Adepu', 'email': 'p^j5w00vx.@dvs.wes', 'date': '2024-06-13'}, {'name': 'Ramya', 'email': '0&og4@mgoyu.nd', 'date': '2024-06-13'}, {'name': 'Sanka', 'email': 'zyd0dpu*g#@psqzyfa.wv', 'date': '2024-06-13'}, {'name': 'Namburi', 'email': 'dy@pxzwsbgp.hy', 'date': '2013-06-24'}, {'name': 'Sekhar', 'email': '3*^w@gwegl.vtr', 'date': '2013-06-24'}, {'name': 'Vishnu', 'email': 'bgyl2#gknk@hqdnsc.ijs', 'date': '2024-06-13'}, {'name': 'Sundar', 'email': 'gl@tzlfbeb.bwq', 'date': '2024-06-13'}, {'name': 'Pavan', 'email': 'p13vcq7b1@ritvrnm.un', 'date': '2024-06-13'}, {'name': 'Praneeth', 'email': 'dvd@p.cy', 'date': '2024-06-13'}, {'name': 'Krishna', 'email': '2ku2#w^@t.nap', 'date': '2013-06-24'}, {'name': 'Vishnu', 'email': '5g4%7zx@tdezuglaq.qct', 'date': '2024-06-13'}, {'name': 'Karnati', 'email': 'ic%k2m$@b.xot', 'date': '2024-06-13'}, {'name': 'Kadagalla', 'email': 'us6p2@omzqzgzq.xr', 'date': '2024-01-13'}, {'name': 'Srikanth', 'email': '8t0%@chwwxdopm.yjr', 'date': '2013-06-24'}, {'name': 'Suma', 'email': 'x2nl!gquvb@ubmr.rtf', 'date': '2024-06-13'}, {'name': 'Chirneni', 'email': '5a9&rb#@o.vst', 'date': '2024-06-13'}, {'name': 'Chandrakanth', 'email': '000*s@pjw.gp', 'date': '2024-06-13'}, {'name': 'Sivani', 'email': 'pmjd$yw4e9@lgkrormz.hww', 'date': '2024-01-13'}, {'name': 'Karnati', 'email': 'wtror84uh@n.dak', 'date': '2024-06-13'}, {'name': 'Koti', 'email': 'mu@hekfylz.wk', 'date': '2024-06-13'}, {'name': 'Vadlamudi', 'email': 'n7$3p5o$6w@tyztxdmvt.ik', 'date': '2024-06-13'}, {'name': 'Bharath', 'email': '3gs@ojzqa.kaf', 'date': '2024-06-13'}, {'name': 'Raghu', 'email': 'omj0@vledemaeo.vj', 'date': '2024-06-13'}, {'name': 'Anyam', 'email': 'h3jn@ejjyeayx.dwp', 'date': '2024-06-13'}, {'name': 'Dathrika', 'email': '627%uak^rl@nz.qz', 'date': '2024-06-13'}, {'name': 'Bahoju', 'email': '22io48!1%@knapgqrq.hd', 'date': '2024-06-13'}, {'name': 'Anwesh', 'email': 'hgy2%@qppsrb.vg', 'date': '2024-06-13'}, {'name': 'Narandas', 'email': '4$wo97@gw.yh', 'date': '2024-06-13'}, {'name': 'Praneeth', 'email': '1z%2p@wxnux.cf', 'date': '2024-06-13'}, {'name': 'Spandana', 'email': 't*.@qg.pey', 'date': '2024-06-13'}, {'name': 'Pottabathini', 'email': '8cdz&m@vvojyh.dlp', 'date': '2024-06-13'}, {'name': 'Anwesh', 'email': 'fw0jrmo7@upft.kh', 'date': '2024-06-13'}, {'name': 'Chary', 'email': 'x5.@ltjpapjcw.rhp', 'date': '2024-06-13'}, {'name': 'Vemuri', 'email': '34*2851o@pila.kj', 'date': '2024-06-13'}]
+[2024-06-19T18:19:50.394+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-19T18:19:50.394+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-19T18:19:50.404+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=file_jsons_to_postgres, task_id=filter_data, run_id=scheduled__2024-06-19T18:10:00+00:00, execution_date=20240619T181000, start_date=20240619T181950, end_date=20240619T181950
+[2024-06-19T18:19:50.435+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-19T18:19:50.466+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-19T18:19:50.468+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

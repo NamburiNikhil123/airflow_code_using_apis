@@ -1,0 +1,34 @@
+[2024-06-13T06:23:42.411+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-13T06:23:42.435+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: airflow_example1.insert_json manual__2024-06-13T06:23:37.581138+00:00 [queued]>
+[2024-06-13T06:23:42.444+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: airflow_example1.insert_json manual__2024-06-13T06:23:37.581138+00:00 [queued]>
+[2024-06-13T06:23:42.444+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-13T06:23:42.459+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): insert_json> on 2024-06-13 06:23:37.581138+00:00
+[2024-06-13T06:23:42.464+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=581) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-13T06:23:42.466+0000] {standard_task_runner.py:63} INFO - Started process 582 to run task
+[2024-06-13T06:23:42.466+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', '***_example1', 'insert_json', 'manual__2024-06-13T06:23:37.581138+00:00', '--job-id', '200', '--raw', '--subdir', 'DAGS_FOLDER/file_jsons_to_postgres.py', '--cfg-path', '/tmp/tmp1te3464m']
+[2024-06-13T06:23:42.468+0000] {standard_task_runner.py:91} INFO - Job 200: Subtask insert_json
+[2024-06-13T06:23:42.508+0000] {task_command.py:426} INFO - Running <TaskInstance: airflow_example1.insert_json manual__2024-06-13T06:23:37.581138+00:00 [running]> on host 8cc8d7c9eee4
+[2024-06-13T06:23:42.639+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='***_example1' AIRFLOW_CTX_TASK_ID='insert_json' AIRFLOW_CTX_EXECUTION_DATE='2024-06-13T06:23:37.581138+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-13T06:23:37.581138+00:00'
+[2024-06-13T06:23:42.640+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-13T06:23:42.703+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Goud', 'email': 'ftml@xqfixisoe.mk', 'date': '2023-01-01 00:00:00'}
+[2024-06-13T06:23:42.705+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Vasamsetti', 'email': 'k6x80wj@oiwdly.niv', 'date': '2023-01-01 00:00:00'}
+[2024-06-13T06:23:42.706+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Dathrika', 'email': 'mb*@msidff.wcv', 'date': '2023-01-01T00:00:00'}
+[2024-06-13T06:23:42.707+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Vadlamudi', 'email': 'vfqvfr@zizdita.lt', 'date': '20230101'}
+[2024-06-13T06:23:42.707+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Masthan', 'email': 'ry.e0ky@vmdp.xyt', 'date': '2023-01-01 00:00:00'}
+[2024-06-13T06:23:42.708+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Nagavamsi', 'email': 'cb$#yv@ccb.yl', 'date': '2023-01-01T00:00:00+00:00'}
+[2024-06-13T06:23:42.709+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Aishwarya', 'email': '2rk@t.hpz', 'date': '2023-01-01T00:00:00'}
+[2024-06-13T06:23:42.709+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Ushasri', 'email': '192@iugtylrs.dym', 'date': '2023-01-01'}
+[2024-06-13T06:23:42.710+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Prasanna', 'email': 'i35ogoi@yyv.jpt', 'date': '20230101'}
+[2024-06-13T06:23:42.711+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Kuruva', 'email': 'rcp@s.fhz', 'date': '2023-01-01 00:00:00'}
+[2024-06-13T06:23:42.711+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Dathrika', 'email': '6e12s@rioaopxuc.csa', 'date': '2023-01-01'}
+[2024-06-13T06:23:42.712+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Rajyalakshmi', 'email': 'j#e&dszdc@gjbtbq.jlg', 'date': '2023-01-01T00:00:00.000Z'}
+[2024-06-13T06:23:42.713+0000] {file_jsons_to_postgres.py:99} INFO - Inserting entry: {'name': 'Vankamamidi', 'email': '85mej@cf.eqt', 'date': '20230101'}
+[2024-06-13T06:23:42.714+0000] {file_jsons_to_postgres.py:102} INFO - Data insertion completed successfully.
+[2024-06-13T06:23:42.715+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-13T06:23:42.716+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-13T06:23:42.736+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=***_example1, task_id=insert_json, run_id=manual__2024-06-13T06:23:37.581138+00:00, execution_date=20240613T062337, start_date=20240613T062342, end_date=20240613T062342
+[2024-06-13T06:23:42.800+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-13T06:23:42.827+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-13T06:23:42.829+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

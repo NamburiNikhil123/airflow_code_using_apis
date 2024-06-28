@@ -1,0 +1,25 @@
+[2024-06-26T09:25:38.532+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-26T09:25:38.564+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_dagruns_task_instances scheduled__2024-06-26T09:21:00+00:00 [queued]>
+[2024-06-26T09:25:38.575+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_dagruns_task_instances scheduled__2024-06-26T09:21:00+00:00 [queued]>
+[2024-06-26T09:25:38.576+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-26T09:25:38.597+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_all_dagruns_task_instances> on 2024-06-26 09:21:00+00:00
+[2024-06-26T09:25:38.605+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=5636) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-26T09:25:38.607+0000] {standard_task_runner.py:63} INFO - Started process 5637 to run task
+[2024-06-26T09:25:38.607+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_all_dags_using_apis', 'get_all_dagruns_task_instances', 'scheduled__2024-06-26T09:21:00+00:00', '--job-id', '4245', '--raw', '--subdir', 'DAGS_FOLDER/alerting_all_dags_using_apis.py', '--cfg-path', '/tmp/tmp6i61sk47']
+[2024-06-26T09:25:38.609+0000] {standard_task_runner.py:91} INFO - Job 4245: Subtask get_all_dagruns_task_instances
+[2024-06-26T09:25:38.673+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_all_dags_using_apis.get_all_dagruns_task_instances scheduled__2024-06-26T09:21:00+00:00 [running]> on host ced2311e92d2
+[2024-06-26T09:25:38.849+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_all_dags_using_apis' AIRFLOW_CTX_TASK_ID='get_all_dagruns_task_instances' AIRFLOW_CTX_EXECUTION_DATE='2024-06-26T09:21:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-26T09:21:00+00:00'
+[2024-06-26T09:25:38.850+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-26T09:25:38.885+0000] {helper_functions.py:276} ERROR - Failed to get task instances for all DAG runs: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/opt/airflow/dags/helper_functions.py", line 263, in get_all_dagruns_task_instances
+    for dag_id, run_id in run_ids:
+TypeError: 'NoneType' object is not iterable
+[2024-06-26T09:25:38.886+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-26T09:25:38.887+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-26T09:25:38.923+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=alerting_all_dags_using_apis, task_id=get_all_dagruns_task_instances, run_id=scheduled__2024-06-26T09:21:00+00:00, execution_date=20240626T092100, start_date=20240626T092538, end_date=20240626T092538
+[2024-06-26T09:25:38.984+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-26T09:25:39.037+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-26T09:25:39.039+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

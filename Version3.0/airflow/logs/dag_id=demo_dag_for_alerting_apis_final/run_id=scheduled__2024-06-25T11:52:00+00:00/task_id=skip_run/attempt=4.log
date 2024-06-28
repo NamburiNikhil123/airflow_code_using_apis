@@ -1,0 +1,53 @@
+[2024-06-25T12:22:38.796+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-25T12:22:38.842+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis_final.skip_run scheduled__2024-06-25T11:52:00+00:00 [queued]>
+[2024-06-25T12:22:38.885+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis_final.skip_run scheduled__2024-06-25T11:52:00+00:00 [queued]>
+[2024-06-25T12:22:38.885+0000] {taskinstance.py:2306} INFO - Starting attempt 4 of 6
+[2024-06-25T12:22:38.926+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): skip_run> on 2024-06-25 11:52:00+00:00
+[2024-06-25T12:22:38.961+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1450) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-25T12:22:38.965+0000] {standard_task_runner.py:63} INFO - Started process 1454 to run task
+[2024-06-25T12:22:38.962+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'demo_dag_for_alerting_apis_final', 'skip_run', 'scheduled__2024-06-25T11:52:00+00:00', '--job-id', '3878', '--raw', '--subdir', 'DAGS_FOLDER/demo_dag_for_alerting_apis.py', '--cfg-path', '/tmp/tmpj8ip2uj6']
+[2024-06-25T12:22:38.966+0000] {standard_task_runner.py:91} INFO - Job 3878: Subtask skip_run
+[2024-06-25T12:22:39.182+0000] {task_command.py:426} INFO - Running <TaskInstance: demo_dag_for_alerting_apis_final.skip_run scheduled__2024-06-25T11:52:00+00:00 [running]> on host ced2311e92d2
+[2024-06-25T12:22:39.573+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo_dag_for_alerting_apis_final' AIRFLOW_CTX_TASK_ID='skip_run' AIRFLOW_CTX_EXECUTION_DATE='2024-06-25T11:52:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-25T11:52:00+00:00'
+[2024-06-25T12:22:39.575+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-25T12:22:40.158+0000] {helper_functions.py:186} INFO - []
+[2024-06-25T12:22:40.158+0000] {helper_functions.py:196} INFO - []
+[2024-06-25T12:22:40.159+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-25T12:22:40.160+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/helper_functions.py", line 197, in alert_notif_skipped_api
+    encrypted_airflow = fernet.encrypt(airflow_api_config)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cryptography/fernet.py", line 52, in encrypt
+    return self.encrypt_at_time(data, int(time.time()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cryptography/fernet.py", line 56, in encrypt_at_time
+    return self._encrypt_from_parts(data, current_time, iv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cryptography/fernet.py", line 61, in _encrypt_from_parts
+    utils._check_bytes("data", data)
+  File "/home/airflow/.local/lib/python3.12/site-packages/cryptography/utils.py", line 31, in _check_bytes
+    raise TypeError(f"{name} must be bytes")
+TypeError: data must be bytes
+[2024-06-25T12:22:40.178+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=demo_dag_for_alerting_apis_final, task_id=skip_run, run_id=scheduled__2024-06-25T11:52:00+00:00, execution_date=20240625T115200, start_date=20240625T122238, end_date=20240625T122240
+[2024-06-25T12:22:40.213+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 3878 for task skip_run (data must be bytes; 1454)
+[2024-06-25T12:22:40.255+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-25T12:22:40.319+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-25T12:22:40.322+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

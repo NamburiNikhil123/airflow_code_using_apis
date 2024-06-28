@@ -1,0 +1,22 @@
+[2024-06-28T10:00:06.859+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T10:00:06.888+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_dag_for_alerting_final.skipped_due_to_data_unavailability scheduled__2024-06-28T09:59:00+00:00 [queued]>
+[2024-06-28T10:00:06.904+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_dag_for_alerting_final.skipped_due_to_data_unavailability scheduled__2024-06-28T09:59:00+00:00 [queued]>
+[2024-06-28T10:00:06.904+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-28T10:00:06.920+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): skipped_due_to_data_unavailability> on 2024-06-28 09:59:00+00:00
+[2024-06-28T10:00:06.925+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=8520) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-28T10:00:06.927+0000] {standard_task_runner.py:63} INFO - Started process 8521 to run task
+[2024-06-28T10:00:06.927+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'demo_dag_for_alerting_final', 'skipped_due_to_data_unavailability', 'scheduled__2024-06-28T09:59:00+00:00', '--job-id', '4892', '--raw', '--subdir', 'DAGS_FOLDER/demo_dag_for_alerting.py', '--cfg-path', '/tmp/tmphn4u0gli']
+[2024-06-28T10:00:06.928+0000] {standard_task_runner.py:91} INFO - Job 4892: Subtask skipped_due_to_data_unavailability
+[2024-06-28T10:00:06.972+0000] {task_command.py:426} INFO - Running <TaskInstance: demo_dag_for_alerting_final.skipped_due_to_data_unavailability scheduled__2024-06-28T09:59:00+00:00 [running]> on host eeacb89bcfc1
+[2024-06-28T10:00:07.061+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo_dag_for_alerting_final' AIRFLOW_CTX_TASK_ID='skipped_due_to_data_unavailability' AIRFLOW_CTX_EXECUTION_DATE='2024-06-28T09:59:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-28T09:59:00+00:00'
+[2024-06-28T10:00:07.062+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T10:00:07.076+0000] {helper_functions.py:196} INFO - The DAG demo_dag_for_alerting_final was skipped at 2024-06-28 10:00:07.076778
+
+[2024-06-28T10:00:07.077+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T10:00:07.077+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T10:00:07.085+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=demo_dag_for_alerting_final, task_id=skipped_due_to_data_unavailability, run_id=scheduled__2024-06-28T09:59:00+00:00, execution_date=20240628T095900, start_date=20240628T100006, end_date=20240628T100007
+[2024-06-28T10:00:07.100+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T10:00:07.116+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T10:00:07.118+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,21 @@
+[2024-06-17T16:52:30.761+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-17T16:52:30.799+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_skipped.task1 manual__2024-06-17T16:52:28.731676+00:00 [queued]>
+[2024-06-17T16:52:30.811+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_skipped.task1 manual__2024-06-17T16:52:28.731676+00:00 [queued]>
+[2024-06-17T16:52:30.812+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-17T16:52:30.833+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): task1> on 2024-06-17 16:52:28.731676+00:00
+[2024-06-17T16:52:30.840+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=6922) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-17T16:52:30.842+0000] {standard_task_runner.py:63} INFO - Started process 6923 to run task
+[2024-06-17T16:52:30.842+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_skipped', 'task1', 'manual__2024-06-17T16:52:28.731676+00:00', '--job-id', '381', '--raw', '--subdir', 'DAGS_FOLDER/alerting_skipped.py', '--cfg-path', '/tmp/tmpiau0uv3v']
+[2024-06-17T16:52:30.844+0000] {standard_task_runner.py:91} INFO - Job 381: Subtask task1
+[2024-06-17T16:52:30.892+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_skipped.task1 manual__2024-06-17T16:52:28.731676+00:00 [running]> on host 4d71c837c754
+[2024-06-17T16:52:31.017+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_skipped' AIRFLOW_CTX_TASK_ID='task1' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T16:52:28.731676+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T16:52:28.731676+00:00'
+[2024-06-17T16:52:31.018+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-17T16:52:31.034+0000] {alerting_skipped.py:29} INFO - Skipping task as intended.
+[2024-06-17T16:52:31.035+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-17T16:52:31.035+0000] {taskinstance.py:2506} INFO - This task is intentionally skipped
+[2024-06-17T16:52:31.050+0000] {taskinstance.py:1206} INFO - Marking task as SKIPPED. dag_id=alerting_skipped, task_id=task1, run_id=manual__2024-06-17T16:52:28.731676+00:00, execution_date=20240617T165228, start_date=20240617T165230, end_date=20240617T165231
+[2024-06-17T16:52:31.096+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-17T16:52:31.123+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-17T16:52:31.128+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

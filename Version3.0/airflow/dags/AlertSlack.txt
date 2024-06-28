@@ -1,0 +1,15 @@
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-28 10:24:04.677654
+The DAG demo_dag_for_alerting_apis_final was skipped at 2024-06-28 10:24:05.545300
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-28 10:25:03.784518
+The DAG demo_dag_for_alerting_apis_final was skipped at 2024-06-28 10:25:04.526615
+The DAG demo_dag_for_alerting_final was skipped 3 times continuously at 2024-06-28 10:26:02.469093
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-28 10:26:03.822832
+The DAG demo_dag_for_alerting_apis_final was skipped in the last 3 runs continuously at 2024-06-28 10:26:04.492083
+The DAG demo_dag_for_alerting_final was skipped 4 times continuously at 2024-06-28 10:27:02.239168
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-28 10:27:03.513687
+The DAG demo_dag_for_alerting_apis_final was skipped in the last 3 runs continuously at 2024-06-28 10:27:04.376651
+The DAG demo_dag_for_alerting_apis_final has reached its threshold skips, please look into it
+The DAG demo_dag_for_alerting_final has reached its threshold skips, please look into it
+The DAG demo_dag_for_alerting_final was skipped 5 times continuously at 2024-06-28 10:28:02.336383
+The DAG demo_dag_for_alerting_final was skipped at 2024-06-28 10:28:04.255408
+The DAG demo_dag_for_alerting_apis_final was skipped in the last 3 runs continuously at 2024-06-28 10:28:05.079956

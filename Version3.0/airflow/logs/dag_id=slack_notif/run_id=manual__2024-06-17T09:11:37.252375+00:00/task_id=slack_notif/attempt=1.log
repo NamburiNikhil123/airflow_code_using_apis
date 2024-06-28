@@ -1,0 +1,21 @@
+[2024-06-17T09:11:39.219+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-17T09:11:39.271+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: slack_notif.slack_notif manual__2024-06-17T09:11:37.252375+00:00 [queued]>
+[2024-06-17T09:11:39.292+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: slack_notif.slack_notif manual__2024-06-17T09:11:37.252375+00:00 [queued]>
+[2024-06-17T09:11:39.292+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-17T09:11:39.315+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): slack_notif> on 2024-06-17 09:11:37.252375+00:00
+[2024-06-17T09:11:39.323+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2197) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-17T09:11:39.324+0000] {standard_task_runner.py:63} INFO - Started process 2199 to run task
+[2024-06-17T09:11:39.325+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'slack_notif', 'slack_notif', 'manual__2024-06-17T09:11:37.252375+00:00', '--job-id', '331', '--raw', '--subdir', 'DAGS_FOLDER/slack_notif.py', '--cfg-path', '/tmp/tmp5wpj_pvp']
+[2024-06-17T09:11:39.326+0000] {standard_task_runner.py:91} INFO - Job 331: Subtask slack_notif
+[2024-06-17T09:11:39.385+0000] {task_command.py:426} INFO - Running <TaskInstance: slack_notif.slack_notif manual__2024-06-17T09:11:37.252375+00:00 [running]> on host 4d71c837c754
+[2024-06-17T09:11:39.509+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='slack_notif' AIRFLOW_CTX_TASK_ID='slack_notif' AIRFLOW_CTX_EXECUTION_DATE='2024-06-17T09:11:37.252375+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-17T09:11:37.252375+00:00'
+[2024-06-17T09:11:39.510+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-17T09:11:39.533+0000] {slack_notif.py:35} ERROR - Error sending Slack notification: SlackWebhookHook.__init__() missing 1 required keyword-only argument: 'slack_webhook_conn_id'
+[2024-06-17T09:11:39.535+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-17T09:11:39.535+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-17T09:11:39.546+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=slack_notif, task_id=slack_notif, run_id=manual__2024-06-17T09:11:37.252375+00:00, execution_date=20240617T091137, start_date=20240617T091139, end_date=20240617T091139
+[2024-06-17T09:11:39.578+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-17T09:11:39.605+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-17T09:11:39.607+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

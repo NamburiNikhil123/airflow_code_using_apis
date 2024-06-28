@@ -1,0 +1,60 @@
+[2024-06-25T11:48:03.253+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-25T11:48:03.312+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis_final.skip_run scheduled__2024-06-25T11:47:00+00:00 [queued]>
+[2024-06-25T11:48:03.335+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis_final.skip_run scheduled__2024-06-25T11:47:00+00:00 [queued]>
+[2024-06-25T11:48:03.337+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-25T11:48:03.400+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): skip_run> on 2024-06-25 11:47:00+00:00
+[2024-06-25T11:48:03.421+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=849) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-25T11:48:03.423+0000] {standard_task_runner.py:63} INFO - Started process 850 to run task
+[2024-06-25T11:48:03.427+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'demo_dag_for_alerting_apis_final', 'skip_run', 'scheduled__2024-06-25T11:47:00+00:00', '--job-id', '3797', '--raw', '--subdir', 'DAGS_FOLDER/demo_dag_for_alerting_apis.py', '--cfg-path', '/tmp/tmphdxazw91']
+[2024-06-25T11:48:03.428+0000] {standard_task_runner.py:91} INFO - Job 3797: Subtask skip_run
+[2024-06-25T11:48:03.529+0000] {task_command.py:426} INFO - Running <TaskInstance: demo_dag_for_alerting_apis_final.skip_run scheduled__2024-06-25T11:47:00+00:00 [running]> on host ced2311e92d2
+[2024-06-25T11:48:03.737+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo_dag_for_alerting_apis_final' AIRFLOW_CTX_TASK_ID='skip_run' AIRFLOW_CTX_EXECUTION_DATE='2024-06-25T11:47:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-25T11:47:00+00:00'
+[2024-06-25T11:48:03.739+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-25T11:48:03.770+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-25T11:48:03.771+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/cryptography/fernet.py", line 117, in _get_unverified_token_data
+    data = base64.urlsafe_b64decode(token)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/base64.py", line 134, in urlsafe_b64decode
+    return b64decode(s)
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/base64.py", line 88, in b64decode
+    return binascii.a2b_base64(s, strict_mode=validate)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+binascii.Error: Incorrect padding
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/helper_functions.py", line 178, in alert_notif_skipped_api
+    decrypted_airflow_api_config = fernet.decrypt(encrypted_airflow_api_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cryptography/fernet.py", line 86, in decrypt
+    timestamp, data = Fernet._get_unverified_token_data(token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/cryptography/fernet.py", line 119, in _get_unverified_token_data
+    raise InvalidToken
+cryptography.fernet.InvalidToken
+[2024-06-25T11:48:03.790+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=demo_dag_for_alerting_apis_final, task_id=skip_run, run_id=scheduled__2024-06-25T11:47:00+00:00, execution_date=20240625T114700, start_date=20240625T114803, end_date=20240625T114803
+[2024-06-25T11:48:03.814+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 3797 for task skip_run (; 850)
+[2024-06-25T11:48:03.834+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-25T11:48:03.866+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-25T11:48:03.869+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

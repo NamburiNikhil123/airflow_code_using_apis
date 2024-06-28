@@ -1,0 +1,90 @@
+[2024-06-28T10:10:07.171+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T10:10:07.200+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis_final.skipped_due_to_data_unavailability scheduled__2024-06-28T10:09:00+00:00 [queued]>
+[2024-06-28T10:10:07.211+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis_final.skipped_due_to_data_unavailability scheduled__2024-06-28T10:09:00+00:00 [queued]>
+[2024-06-28T10:10:07.212+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-28T10:10:07.224+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): skipped_due_to_data_unavailability> on 2024-06-28 10:09:00+00:00
+[2024-06-28T10:10:07.230+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=121) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-28T10:10:07.232+0000] {standard_task_runner.py:63} INFO - Started process 122 to run task
+[2024-06-28T10:10:07.232+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'demo_dag_for_alerting_apis_final', 'skipped_due_to_data_unavailability', 'scheduled__2024-06-28T10:09:00+00:00', '--job-id', '4955', '--raw', '--subdir', 'DAGS_FOLDER/demo_dag_for_alerting_apis.py', '--cfg-path', '/tmp/tmpix6b6if7']
+[2024-06-28T10:10:07.233+0000] {standard_task_runner.py:91} INFO - Job 4955: Subtask skipped_due_to_data_unavailability
+[2024-06-28T10:10:07.275+0000] {task_command.py:426} INFO - Running <TaskInstance: demo_dag_for_alerting_apis_final.skipped_due_to_data_unavailability scheduled__2024-06-28T10:09:00+00:00 [running]> on host 2552e7b36400
+[2024-06-28T10:10:07.375+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo_dag_for_alerting_apis_final' AIRFLOW_CTX_TASK_ID='skipped_due_to_data_unavailability' AIRFLOW_CTX_EXECUTION_DATE='2024-06-28T10:09:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-28T10:09:00+00:00'
+[2024-06-28T10:10:07.376+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T10:12:20.679+0000] {helper_functions.py:260} ERROR - HTTP request failed: HTTPConnectionPool(host='172.240.2.5', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f29117641a0>, 'Connection to 172.240.2.5 timed out. (connect timeout=None)'))
+[2024-06-28T10:12:20.694+0000] {helper_functions.py:261} ERROR - Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [Errno 110] Connection timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 400, in request
+    self.endheaders()
+  File "/usr/local/lib/python3.12/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.12/http/client.py", line 1091, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.12/http/client.py", line 1035, in send
+    self.connect()
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 238, in connect
+    self.sock = self._new_conn()
+                ^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connection.py", line 207, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f29117641a0>, 'Connection to 172.240.2.5 timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/***/.local/lib/python3.12/site-packages/requests/adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='172.240.2.5', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f29117641a0>, 'Connection to 172.240.2.5 timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/***/dags/helper_functions.py", line 238, in alert_notif_skipped_api
+    response = requests.get(get_latest_limit_dagRuns_api)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/***/.local/lib/python3.12/site-packages/requests/adapters.py", line 507, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='172.240.2.5', port=8080): Max retries exceeded with url: /api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns?limit=3&order_by=-start_date (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f29117641a0>, 'Connection to 172.240.2.5 timed out. (connect timeout=None)'))
+
+[2024-06-28T10:12:20.697+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-28T10:12:20.698+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T10:12:20.718+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=demo_dag_for_alerting_apis_final, task_id=skipped_due_to_data_unavailability, run_id=scheduled__2024-06-28T10:09:00+00:00, execution_date=20240628T100900, start_date=20240628T101007, end_date=20240628T101220
+[2024-06-28T10:12:20.781+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-28T10:12:20.797+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T10:12:20.798+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

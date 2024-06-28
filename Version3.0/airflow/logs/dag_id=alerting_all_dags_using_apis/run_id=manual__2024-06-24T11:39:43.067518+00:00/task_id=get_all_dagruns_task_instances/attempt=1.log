@@ -1,0 +1,36 @@
+[2024-06-24T11:40:03.242+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-24T11:40:03.405+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_dagruns_task_instances manual__2024-06-24T11:39:43.067518+00:00 [queued]>
+[2024-06-24T11:40:03.458+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: alerting_all_dags_using_apis.get_all_dagruns_task_instances manual__2024-06-24T11:39:43.067518+00:00 [queued]>
+[2024-06-24T11:40:03.460+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-24T11:40:03.539+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): get_all_dagruns_task_instances> on 2024-06-24 11:39:43.067518+00:00
+[2024-06-24T11:40:03.567+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=3720) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-24T11:40:03.583+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'alerting_all_dags_using_apis', 'get_all_dagruns_task_instances', 'manual__2024-06-24T11:39:43.067518+00:00', '--job-id', '3608', '--raw', '--subdir', 'DAGS_FOLDER/alerting_all_dags_using_apis.py', '--cfg-path', '/tmp/tmpiks_wlzz']
+[2024-06-24T11:40:03.591+0000] {standard_task_runner.py:91} INFO - Job 3608: Subtask get_all_dagruns_task_instances
+[2024-06-24T11:40:03.597+0000] {standard_task_runner.py:63} INFO - Started process 3721 to run task
+[2024-06-24T11:40:03.865+0000] {task_command.py:426} INFO - Running <TaskInstance: alerting_all_dags_using_apis.get_all_dagruns_task_instances manual__2024-06-24T11:39:43.067518+00:00 [running]> on host bf895605831d
+[2024-06-24T11:40:04.282+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='alerting_all_dags_using_apis' AIRFLOW_CTX_TASK_ID='get_all_dagruns_task_instances' AIRFLOW_CTX_EXECUTION_DATE='2024-06-24T11:39:43.067518+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-06-24T11:39:43.067518+00:00'
+[2024-06-24T11:40:04.285+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-24T11:40:04.343+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/alerting_all_dags_using_apis/dagRuns/manual__2024-06-24T11:39:43.067518+00:00/taskInstances?limit=100
+[2024-06-24T11:40:05.183+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/alerting_all_dags_using_apis/dagRuns/scheduled__2024-06-24T11:15:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:06.552+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/alerting_all_dags_using_apis/dagRuns/scheduled__2024-06-24T11:00:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:07.563+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/create_table/dagRuns/scheduled__2024-06-18T00:00:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:08.367+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/create_table/dagRuns/manual__2024-06-12T06:16:49.488642+00:00/taskInstances?limit=100
+[2024-06-24T11:40:09.404+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/create_table/dagRuns/manual__2024-06-12T06:08:17.088814+00:00/taskInstances?limit=100
+[2024-06-24T11:40:10.421+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns/scheduled__2024-06-24T09:49:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:11.482+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns/scheduled__2024-06-24T09:48:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:12.473+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/demo_dag_for_alerting_apis_final/dagRuns/scheduled__2024-06-24T09:47:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:13.364+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/demo_dag_for_alerting_final_1/dagRuns/scheduled__2024-06-24T09:49:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:14.361+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/demo_dag_for_alerting_final_1/dagRuns/scheduled__2024-06-24T09:48:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:15.554+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/demo_dag_for_alerting_final_1/dagRuns/scheduled__2024-06-24T09:47:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:16.446+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/file_jsons_to_postgres/dagRuns/scheduled__2024-06-19T18:40:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:17.354+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/file_jsons_to_postgres/dagRuns/scheduled__2024-06-19T18:35:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:18.459+0000] {helper_functions.py:226} INFO - Requesting http://***:***@172.240.2.5:8080/api/v1/dags/file_jsons_to_postgres/dagRuns/scheduled__2024-06-19T18:30:00+00:00/taskInstances?limit=100
+[2024-06-24T11:40:19.531+0000] {helper_functions.py:232} INFO - States of all DAGs' runs: {'alerting_all_dags_using_apis': [0, 0, 0], 'create_table': [0, 0, 0], 'demo_dag_for_alerting_apis_final': [3, 3, 3], 'demo_dag_for_alerting_final_1': [3, 3, 3], 'file_jsons_to_postgres': [0, 0, 0]}
+[2024-06-24T11:40:19.532+0000] {python.py:237} INFO - Done. Returned value was: {'alerting_all_dags_using_apis': [0, 0, 0], 'create_table': [0, 0, 0], 'demo_dag_for_alerting_apis_final': [3, 3, 3], 'demo_dag_for_alerting_final_1': [3, 3, 3], 'file_jsons_to_postgres': [0, 0, 0]}
+[2024-06-24T11:40:19.534+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-24T11:40:19.618+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=alerting_all_dags_using_apis, task_id=get_all_dagruns_task_instances, run_id=manual__2024-06-24T11:39:43.067518+00:00, execution_date=20240624T113943, start_date=20240624T114003, end_date=20240624T114019
+[2024-06-24T11:40:19.720+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-24T11:40:19.815+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-24T11:40:19.821+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

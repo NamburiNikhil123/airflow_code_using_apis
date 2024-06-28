@@ -1,0 +1,440 @@
+[2024-06-27T12:42:39.033+0000] {processor.py:161} INFO - Started process (PID=8307) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:42:39.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:42:39.035+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:42:39.034+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:42:39.040+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:42:39.036+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:42:39.044+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:42:39.066+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.038 seconds
+[2024-06-27T12:43:09.465+0000] {processor.py:161} INFO - Started process (PID=8321) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:09.466+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:43:09.467+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:09.466+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:09.474+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:09.469+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:43:09.478+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:09.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.039 seconds
+[2024-06-27T12:43:18.591+0000] {processor.py:161} INFO - Started process (PID=8323) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:18.595+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:43:18.596+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:18.596+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:18.599+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:18.598+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 4
+    get_latest_limit_dagRuns_api = f"{base_url}/{dag_id}/dagRuns?limit={airflow_api_config['limit']}&order_by=-start_date"
+IndentationError: unexpected indent
+[2024-06-27T12:43:18.600+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:18.615+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.032 seconds
+[2024-06-27T12:43:21.769+0000] {processor.py:161} INFO - Started process (PID=8330) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:21.770+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:43:21.771+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:21.771+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:21.778+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:21.773+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:43:21.783+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:21.809+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.047 seconds
+[2024-06-27T12:43:34.860+0000] {processor.py:161} INFO - Started process (PID=8337) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:34.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:43:34.861+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:34.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:34.867+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:43:34.863+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:43:34.870+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:43:34.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.033 seconds
+[2024-06-27T12:44:03.342+0000] {processor.py:161} INFO - Started process (PID=8352) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:03.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:03.345+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:03.345+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:03.350+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:03.348+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 4
+    get_task_Instances_api = f"{base_url}/{dag_id}/dagRuns/{run_id}/taskInstances/{task_id}"
+IndentationError: unexpected indent
+[2024-06-27T12:44:03.351+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:03.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.039 seconds
+[2024-06-27T12:44:06.401+0000] {processor.py:161} INFO - Started process (PID=8353) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:06.404+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:06.407+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:06.406+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:06.419+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:06.412+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:44:06.423+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:06.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.063 seconds
+[2024-06-27T12:44:19.570+0000] {processor.py:161} INFO - Started process (PID=8355) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:19.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:19.573+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:19.572+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:19.580+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:19.576+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:44:19.584+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:19.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.040 seconds
+[2024-06-27T12:44:24.757+0000] {processor.py:161} INFO - Started process (PID=8362) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:24.758+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:24.758+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:24.758+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:24.763+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:24.760+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:44:24.765+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:24.778+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.025 seconds
+[2024-06-27T12:44:27.788+0000] {processor.py:161} INFO - Started process (PID=8363) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:27.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:27.790+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:27.789+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:27.794+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:27.792+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 4
+    get_task_Instances_api = f"{base_url}/{dag_id}/dagRuns/{run_id}/taskInstances/{task_id}"
+IndentationError: unexpected indent
+[2024-06-27T12:44:27.795+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:27.819+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.039 seconds
+[2024-06-27T12:44:30.825+0000] {processor.py:161} INFO - Started process (PID=8364) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:30.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:30.826+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:30.826+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:30.831+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:30.828+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:44:30.834+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:30.849+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.029 seconds
+[2024-06-27T12:44:32.858+0000] {processor.py:161} INFO - Started process (PID=8371) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:32.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:32.860+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:32.859+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:32.866+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:32.862+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:44:32.869+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:32.885+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.032 seconds
+[2024-06-27T12:44:35.895+0000] {processor.py:161} INFO - Started process (PID=8372) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:35.895+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:35.896+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:35.896+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:35.902+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:35.898+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:44:35.905+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:35.919+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.031 seconds
+[2024-06-27T12:44:42.003+0000] {processor.py:161} INFO - Started process (PID=8373) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:42.007+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:44:42.009+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:42.008+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:42.019+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:44:42.012+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:44:42.024+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:44:42.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.059 seconds
+[2024-06-27T12:45:12.562+0000] {processor.py:161} INFO - Started process (PID=8391) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:45:12.563+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:45:12.564+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:45:12.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:45:12.571+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:45:12.567+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:45:12.575+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:45:12.591+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.041 seconds
+[2024-06-27T12:45:42.862+0000] {processor.py:161} INFO - Started process (PID=8405) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:45:42.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:45:42.867+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:45:42.867+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:45:42.876+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:45:42.870+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:45:42.880+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:45:42.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.048 seconds
+[2024-06-27T12:46:13.425+0000] {processor.py:161} INFO - Started process (PID=8420) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:46:13.428+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:46:13.430+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:46:13.429+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:46:13.441+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:46:13.434+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:46:13.445+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:46:13.462+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.056 seconds
+[2024-06-27T12:46:43.842+0000] {processor.py:161} INFO - Started process (PID=8437) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:46:43.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:46:43.847+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:46:43.847+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:46:43.853+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:46:43.849+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:46:43.856+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:46:43.872+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.035 seconds
+[2024-06-27T12:47:14.291+0000] {processor.py:161} INFO - Started process (PID=8453) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:47:14.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:47:14.292+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:47:14.292+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:47:14.298+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:47:14.294+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:47:14.301+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:47:14.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.036 seconds
+[2024-06-27T12:47:44.699+0000] {processor.py:161} INFO - Started process (PID=8467) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:47:44.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:47:44.702+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:47:44.701+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:47:44.708+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:47:44.704+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:47:44.712+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:47:44.736+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.046 seconds
+[2024-06-27T12:48:15.191+0000] {processor.py:161} INFO - Started process (PID=8481) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:15.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:48:15.195+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:15.194+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:15.208+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:15.199+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:48:15.213+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:15.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.057 seconds
+[2024-06-27T12:48:45.582+0000] {processor.py:161} INFO - Started process (PID=8495) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:45.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:48:45.583+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:45.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:45.592+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:45.585+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:48:45.595+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:45.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.039 seconds
+[2024-06-27T12:48:49.604+0000] {processor.py:161} INFO - Started process (PID=8496) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:49.605+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:48:49.606+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:49.605+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:49.611+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:49.607+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 2, in <module>
+    api_to_get_all_active_dags = f"{base_url}?only_active=true"
+                                    ^^^^^^^^
+NameError: name 'base_url' is not defined
+[2024-06-27T12:48:49.614+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:49.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.033 seconds
+[2024-06-27T12:48:51.653+0000] {processor.py:161} INFO - Started process (PID=8497) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:51.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:48:51.654+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:51.654+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:51.657+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:51.656+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1
+    base_url = f"http://{airflow_api_config['user']}:{airflow_api_config['password']}@{airflow_api_config['ip_address']}:8080/api/v1/dags"
+IndentationError: unexpected indent
+[2024-06-27T12:48:51.657+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:51.672+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.025 seconds
+[2024-06-27T12:48:52.665+0000] {processor.py:161} INFO - Started process (PID=8498) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:52.666+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:48:52.666+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:52.666+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:52.669+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:52.668+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1
+    base_url = f"http://{airflow_api_config['user']}:{airflow_api_config['password']}@{airflow_api_config['ip_address']}:8080/api/v1/dags"
+IndentationError: unexpected indent
+[2024-06-27T12:48:52.669+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:52.686+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.026 seconds
+[2024-06-27T12:48:56.872+0000] {processor.py:161} INFO - Started process (PID=8506) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:56.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:48:56.875+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:56.874+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:56.886+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:48:56.878+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    base_url = f"http://{airflow_api_config['user']}:{airflow_api_config['password']}@{airflow_api_config['ip_address']}:8080/api/v1/dags"
+                         ^^^^^^^^^^^^^^^^^^
+NameError: name 'airflow_api_config' is not defined
+[2024-06-27T12:48:56.893+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:48:56.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.045 seconds
+[2024-06-27T12:49:27.257+0000] {processor.py:161} INFO - Started process (PID=8520) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:49:27.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:49:27.262+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:49:27.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:49:27.273+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:49:27.264+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    base_url = f"http://{airflow_api_config['user']}:{airflow_api_config['password']}@{airflow_api_config['ip_address']}:8080/api/v1/dags"
+                         ^^^^^^^^^^^^^^^^^^
+NameError: name 'airflow_api_config' is not defined
+[2024-06-27T12:49:27.281+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:49:27.298+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.048 seconds
+[2024-06-27T12:49:57.654+0000] {processor.py:161} INFO - Started process (PID=8534) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:49:57.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:49:57.655+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:49:57.655+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:49:57.662+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:49:57.656+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    base_url = f"http://{airflow_api_config['user']}:{airflow_api_config['password']}@{airflow_api_config['ip_address']}:8080/api/v1/dags"
+                         ^^^^^^^^^^^^^^^^^^
+NameError: name 'airflow_api_config' is not defined
+[2024-06-27T12:49:57.667+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:49:57.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.031 seconds
+[2024-06-27T12:50:28.005+0000] {processor.py:161} INFO - Started process (PID=8548) to work on /opt/airflow/dags/APIs.py
+[2024-06-27T12:50:28.006+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/APIs.py for tasks to queue
+[2024-06-27T12:50:28.006+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:50:28.006+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/APIs.py
+[2024-06-27T12:50:28.013+0000] {logging_mixin.py:188} INFO - [2024-06-27T12:50:28.008+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/APIs.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/APIs.py", line 1, in <module>
+    base_url = f"http://{airflow_api_config['user']}:{airflow_api_config['password']}@{airflow_api_config['ip_address']}:8080/api/v1/dags"
+                         ^^^^^^^^^^^^^^^^^^
+NameError: name 'airflow_api_config' is not defined
+[2024-06-27T12:50:28.019+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/APIs.py
+[2024-06-27T12:50:28.033+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/APIs.py took 0.033 seconds

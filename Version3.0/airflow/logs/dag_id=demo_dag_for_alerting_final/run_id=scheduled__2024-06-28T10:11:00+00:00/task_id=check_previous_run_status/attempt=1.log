@@ -1,0 +1,69 @@
+[2024-06-28T10:12:01.987+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-28T10:12:02.016+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_dag_for_alerting_final.check_previous_run_status scheduled__2024-06-28T10:11:00+00:00 [queued]>
+[2024-06-28T10:12:02.029+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_dag_for_alerting_final.check_previous_run_status scheduled__2024-06-28T10:11:00+00:00 [queued]>
+[2024-06-28T10:12:02.029+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-28T10:12:02.049+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): check_previous_run_status> on 2024-06-28 10:11:00+00:00
+[2024-06-28T10:12:02.058+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=161) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-28T10:12:02.059+0000] {standard_task_runner.py:63} INFO - Started process 164 to run task
+[2024-06-28T10:12:02.060+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'demo_dag_for_alerting_final', 'check_previous_run_status', 'scheduled__2024-06-28T10:11:00+00:00', '--job-id', '4960', '--raw', '--subdir', 'DAGS_FOLDER/demo_dag_for_alerting.py', '--cfg-path', '/tmp/tmp5smqx0m7']
+[2024-06-28T10:12:02.061+0000] {standard_task_runner.py:91} INFO - Job 4960: Subtask check_previous_run_status
+[2024-06-28T10:12:02.116+0000] {task_command.py:426} INFO - Running <TaskInstance: demo_dag_for_alerting_final.check_previous_run_status scheduled__2024-06-28T10:11:00+00:00 [running]> on host 2552e7b36400
+[2024-06-28T10:12:02.273+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo_dag_for_alerting_final' AIRFLOW_CTX_TASK_ID='check_previous_run_status' AIRFLOW_CTX_EXECUTION_DATE='2024-06-28T10:11:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-28T10:11:00+00:00'
+[2024-06-28T10:12:02.274+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-28T10:12:02.301+0000] {baseoperator.py:399} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-06-28T10:12:02.302+0000] {helper_functions.py:145} INFO - Reading encrypted details from ('/opt/***/dags/postgres_connection.py', '/opt/***/dags/***_api_configuration.py')
+[2024-06-28T10:12:02.311+0000] {helper_functions.py:148} INFO - Decrypted postgres connection: {'user': '***', 'password': '***', 'dbname': '***', 'host': '172.240.2.2', 'port': '5432'}
+[2024-06-28T10:14:17.414+0000] {helper_functions.py:170} ERROR - Failed to run demo_dag_for_alerting_final with task check_previous_run_status: connection to server at "172.240.2.2", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-06-28T10:14:17.415+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-28T10:14:17.417+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/helper_functions.py", line 150, in alert_notif_failure
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "172.240.2.2", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 269, in execute
+    return self.do_branch(context, super().execute(context))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/helper_functions.py", line 173, in alert_notif_failure
+    raise AirflowFailException(f"Failed to run {dag_id} with task {task_id}: {e}")
+airflow.exceptions.AirflowFailException: Failed to run demo_dag_for_alerting_final with task check_previous_run_status: connection to server at "172.240.2.2", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+
+[2024-06-28T10:14:17.456+0000] {taskinstance.py:1206} INFO - Immediate failure requested. Marking task as FAILED. dag_id=demo_dag_for_alerting_final, task_id=check_previous_run_status, run_id=scheduled__2024-06-28T10:11:00+00:00, execution_date=20240628T101100, start_date=20240628T101202, end_date=20240628T101417
+[2024-06-28T10:14:17.475+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 4960 for task check_previous_run_status (Failed to run demo_dag_for_alerting_final with task check_previous_run_status: connection to server at "172.240.2.2", port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+; 164)
+[2024-06-28T10:14:17.489+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-06-28T10:14:17.526+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-28T10:14:17.530+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

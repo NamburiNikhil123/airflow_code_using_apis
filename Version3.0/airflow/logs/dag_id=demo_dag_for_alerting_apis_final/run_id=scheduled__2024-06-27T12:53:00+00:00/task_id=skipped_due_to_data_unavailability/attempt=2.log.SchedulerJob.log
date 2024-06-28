@@ -1,0 +1,1 @@
+[2024-06-27T12:55:09.017+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: demo_dag_for_alerting_apis_final.skipped_due_to_data_unavailability scheduled__2024-06-27T12:53:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

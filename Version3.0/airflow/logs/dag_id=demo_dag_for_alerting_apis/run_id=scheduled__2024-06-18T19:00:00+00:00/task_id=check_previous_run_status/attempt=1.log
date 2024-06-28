@@ -1,0 +1,24 @@
+[2024-06-18T19:01:01.605+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-18T19:01:01.627+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis.check_previous_run_status scheduled__2024-06-18T19:00:00+00:00 [queued]>
+[2024-06-18T19:01:01.634+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo_dag_for_alerting_apis.check_previous_run_status scheduled__2024-06-18T19:00:00+00:00 [queued]>
+[2024-06-18T19:01:01.635+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 6
+[2024-06-18T19:01:01.649+0000] {taskinstance.py:2330} INFO - Executing <Task(BranchPythonOperator): check_previous_run_status> on 2024-06-18 19:00:00+00:00
+[2024-06-18T19:01:01.654+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=1393) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-18T19:01:01.655+0000] {standard_task_runner.py:63} INFO - Started process 1394 to run task
+[2024-06-18T19:01:01.655+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'demo_dag_for_alerting_apis', 'check_previous_run_status', 'scheduled__2024-06-18T19:00:00+00:00', '--job-id', '914', '--raw', '--subdir', 'DAGS_FOLDER/demo_dag_for_alerting_apis.py', '--cfg-path', '/tmp/tmpcd8gw5et']
+[2024-06-18T19:01:01.656+0000] {standard_task_runner.py:91} INFO - Job 914: Subtask check_previous_run_status
+[2024-06-18T19:01:01.696+0000] {task_command.py:426} INFO - Running <TaskInstance: demo_dag_for_alerting_apis.check_previous_run_status scheduled__2024-06-18T19:00:00+00:00 [running]> on host 9e4d135130fa
+[2024-06-18T19:01:01.787+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='demo_dag_for_alerting_apis' AIRFLOW_CTX_TASK_ID='check_previous_run_status' AIRFLOW_CTX_EXECUTION_DATE='2024-06-18T19:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-18T19:00:00+00:00'
+[2024-06-18T19:01:01.788+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-18T19:01:01.801+0000] {baseoperator.py:399} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2024-06-18T19:01:01.802+0000] {python.py:237} INFO - Done. Returned value was: skip_run
+[2024-06-18T19:01:01.802+0000] {branch.py:36} INFO - Branch into skip_run
+[2024-06-18T19:01:01.802+0000] {skipmixin.py:178} INFO - Following branch skip_run
+[2024-06-18T19:01:01.816+0000] {skipmixin.py:246} INFO - Skipping tasks [('start_run', -1)]
+[2024-06-18T19:01:01.839+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-18T19:01:01.869+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=demo_dag_for_alerting_apis, task_id=check_previous_run_status, run_id=scheduled__2024-06-18T19:00:00+00:00, execution_date=20240618T190000, start_date=20240618T190101, end_date=20240618T190101
+[2024-06-18T19:01:01.908+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-18T19:01:01.952+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-18T19:01:01.954+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

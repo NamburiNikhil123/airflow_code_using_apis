@@ -1,0 +1,182 @@
+[2024-06-22T15:33:06.992+0000] {processor.py:161} INFO - Started process (PID=35) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:33:06.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:33:06.995+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:33:06.994+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:33:07.013+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:33:07.147+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:33:07.146+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:33:07.177+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:33:07.177+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:32:00+00:00, run_after=2024-06-22 15:33:00+00:00
+[2024-06-22T15:33:07.201+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.215 seconds
+[2024-06-22T15:33:37.364+0000] {processor.py:161} INFO - Started process (PID=49) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:33:37.365+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:33:37.366+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:33:37.366+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:33:37.378+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:33:37.485+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:33:37.485+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:33:37.510+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:33:37.510+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:32:00+00:00, run_after=2024-06-22 15:33:00+00:00
+[2024-06-22T15:33:37.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.169 seconds
+[2024-06-22T15:34:07.978+0000] {processor.py:161} INFO - Started process (PID=63) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:34:07.978+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:34:07.980+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:34:07.979+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:34:07.992+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:34:08.100+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:34:08.100+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:34:08.125+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:34:08.125+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:33:00+00:00, run_after=2024-06-22 15:34:00+00:00
+[2024-06-22T15:34:08.143+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.169 seconds
+[2024-06-22T15:34:38.597+0000] {processor.py:161} INFO - Started process (PID=77) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:34:38.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:34:38.600+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:34:38.600+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:34:38.618+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:34:38.767+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:34:38.767+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:34:38.796+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:34:38.796+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:33:00+00:00, run_after=2024-06-22 15:34:00+00:00
+[2024-06-22T15:34:38.816+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.224 seconds
+[2024-06-22T15:35:09.273+0000] {processor.py:161} INFO - Started process (PID=91) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:35:09.274+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:35:09.276+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:35:09.276+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:35:09.291+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:35:09.415+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:35:09.415+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:35:09.440+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:35:09.440+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:34:00+00:00, run_after=2024-06-22 15:35:00+00:00
+[2024-06-22T15:35:09.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.192 seconds
+[2024-06-22T15:35:39.899+0000] {processor.py:161} INFO - Started process (PID=105) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:35:39.900+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:35:39.902+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:35:39.901+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:35:39.915+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:35:40.029+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:35:40.029+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:35:40.052+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:35:40.052+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:34:00+00:00, run_after=2024-06-22 15:35:00+00:00
+[2024-06-22T15:35:40.070+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.176 seconds
+[2024-06-22T15:36:10.585+0000] {processor.py:161} INFO - Started process (PID=119) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:36:10.586+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:36:10.587+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:36:10.587+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:36:10.601+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:36:10.717+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:36:10.717+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:36:10.741+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:36:10.741+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:35:00+00:00, run_after=2024-06-22 15:36:00+00:00
+[2024-06-22T15:36:10.757+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.177 seconds
+[2024-06-22T15:36:41.215+0000] {processor.py:161} INFO - Started process (PID=133) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:36:41.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:36:41.218+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:36:41.218+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:36:41.232+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:36:41.364+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:36:41.363+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:36:41.397+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:36:41.397+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:35:00+00:00, run_after=2024-06-22 15:36:00+00:00
+[2024-06-22T15:36:41.421+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.211 seconds
+[2024-06-22T15:37:11.879+0000] {processor.py:161} INFO - Started process (PID=147) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:37:11.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:37:11.881+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:37:11.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:37:11.893+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:37:12.012+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:37:12.011+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:37:12.040+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:37:12.040+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:36:00+00:00, run_after=2024-06-22 15:37:00+00:00
+[2024-06-22T15:37:12.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.186 seconds
+[2024-06-22T15:37:42.543+0000] {processor.py:161} INFO - Started process (PID=161) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:37:42.544+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:37:42.546+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:37:42.545+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:37:42.558+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:37:42.669+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:37:42.669+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:37:42.695+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:37:42.695+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:36:00+00:00, run_after=2024-06-22 15:37:00+00:00
+[2024-06-22T15:37:42.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.175 seconds
+[2024-06-22T15:38:13.194+0000] {processor.py:161} INFO - Started process (PID=175) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:38:13.195+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:38:13.197+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:38:13.196+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:38:13.209+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:38:13.313+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:38:13.313+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:38:13.337+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:38:13.337+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:37:00+00:00, run_after=2024-06-22 15:38:00+00:00
+[2024-06-22T15:38:13.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.166 seconds
+[2024-06-22T15:38:43.817+0000] {processor.py:161} INFO - Started process (PID=189) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:38:43.818+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:38:43.819+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:38:43.819+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:38:43.832+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:38:43.939+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:38:43.939+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:38:43.964+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:38:43.964+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:37:00+00:00, run_after=2024-06-22 15:38:00+00:00
+[2024-06-22T15:38:43.981+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.169 seconds
+[2024-06-22T15:39:14.447+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:39:14.448+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:39:14.450+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:39:14.449+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:39:14.463+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:39:14.585+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:39:14.585+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:39:14.612+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:39:14.612+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:38:00+00:00, run_after=2024-06-22 15:39:00+00:00
+[2024-06-22T15:39:14.630+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.188 seconds
+[2024-06-22T15:39:45.082+0000] {processor.py:161} INFO - Started process (PID=216) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:39:45.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:39:45.084+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:39:45.084+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:39:45.097+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:39:45.213+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:39:45.213+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:39:45.242+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:39:45.242+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:38:00+00:00, run_after=2024-06-22 15:39:00+00:00
+[2024-06-22T15:39:45.261+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.184 seconds
+[2024-06-22T15:40:15.735+0000] {processor.py:161} INFO - Started process (PID=230) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:40:15.736+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:40:15.738+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:40:15.737+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:40:15.750+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:40:15.870+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:40:15.869+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:40:15.897+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:40:15.897+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:39:00+00:00, run_after=2024-06-22 15:40:00+00:00
+[2024-06-22T15:40:15.917+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.186 seconds
+[2024-06-22T15:40:46.404+0000] {processor.py:161} INFO - Started process (PID=244) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:40:46.405+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:40:46.406+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:40:46.406+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:40:46.421+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:40:46.544+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:40:46.544+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:40:46.569+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:40:46.569+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:39:00+00:00, run_after=2024-06-22 15:40:00+00:00
+[2024-06-22T15:40:46.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.190 seconds
+[2024-06-22T15:41:17.070+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:41:17.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:41:17.073+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:41:17.073+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:41:17.095+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:41:17.236+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:41:17.235+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:41:17.269+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:41:17.269+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:40:00+00:00, run_after=2024-06-22 15:41:00+00:00
+[2024-06-22T15:41:17.288+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.222 seconds
+[2024-06-22T15:41:47.400+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:41:47.401+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:41:47.402+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:41:47.402+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:41:47.416+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:41:47.534+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:41:47.534+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:41:47.558+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:41:47.558+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:40:00+00:00, run_after=2024-06-22 15:41:00+00:00
+[2024-06-22T15:41:47.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.180 seconds
+[2024-06-22T15:42:18.028+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:42:18.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:42:18.031+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:42:18.030+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:42:18.044+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:42:18.156+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:42:18.156+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:42:18.183+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:42:18.183+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:41:00+00:00, run_after=2024-06-22 15:42:00+00:00
+[2024-06-22T15:42:18.203+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.179 seconds
+[2024-06-22T15:42:48.671+0000] {processor.py:161} INFO - Started process (PID=300) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:42:48.672+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:42:48.674+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:42:48.674+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:42:48.686+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:42:48.806+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:42:48.806+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:42:48.835+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:42:48.835+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:41:00+00:00, run_after=2024-06-22 15:42:00+00:00
+[2024-06-22T15:42:48.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.188 seconds
+[2024-06-22T15:43:19.319+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:43:19.320+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:43:19.321+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:43:19.321+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:43:19.336+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:43:19.451+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:43:19.451+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:43:19.477+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:43:19.476+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:42:00+00:00, run_after=2024-06-22 15:43:00+00:00
+[2024-06-22T15:43:19.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.181 seconds
+[2024-06-22T15:43:49.972+0000] {processor.py:161} INFO - Started process (PID=328) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:43:49.973+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:43:49.974+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:43:49.974+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:43:49.990+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:43:50.124+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:43:50.124+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:43:50.152+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:43:50.152+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:42:00+00:00, run_after=2024-06-22 15:43:00+00:00
+[2024-06-22T15:43:50.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.204 seconds
+[2024-06-22T15:44:20.689+0000] {processor.py:161} INFO - Started process (PID=342) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:44:20.690+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:44:20.691+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:44:20.691+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:44:20.710+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:44:20.873+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:44:20.873+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:44:20.906+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:44:20.906+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:43:00+00:00, run_after=2024-06-22 15:44:00+00:00
+[2024-06-22T15:44:20.932+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.249 seconds
+[2024-06-22T15:44:51.455+0000] {processor.py:161} INFO - Started process (PID=355) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:44:51.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:44:51.459+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:44:51.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:44:51.480+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:44:51.665+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:44:51.665+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:44:51.694+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:44:51.694+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:43:00+00:00, run_after=2024-06-22 15:44:00+00:00
+[2024-06-22T15:44:51.720+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.274 seconds
+[2024-06-22T15:45:22.275+0000] {processor.py:161} INFO - Started process (PID=369) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:45:22.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:45:22.277+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:45:22.277+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:45:22.292+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:45:22.411+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:45:22.410+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:45:22.438+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:45:22.438+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:44:00+00:00, run_after=2024-06-22 15:45:00+00:00
+[2024-06-22T15:45:22.455+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.186 seconds
+[2024-06-22T15:45:52.968+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:45:52.970+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/demo_dag_for_alerting.py for tasks to queue
+[2024-06-22T15:45:52.971+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:45:52.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:45:52.990+0000] {processor.py:840} INFO - DAG(s) 'demo_dag_for_alerting_final_1' retrieved from /opt/airflow/dags/demo_dag_for_alerting.py
+[2024-06-22T15:45:53.145+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:45:53.145+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-22T15:45:53.191+0000] {logging_mixin.py:188} INFO - [2024-06-22T15:45:53.191+0000] {dag.py:3954} INFO - Setting next_dagrun for demo_dag_for_alerting_final_1 to 2024-06-22 15:44:00+00:00, run_after=2024-06-22 15:45:00+00:00
+[2024-06-22T15:45:53.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/demo_dag_for_alerting.py took 0.251 seconds

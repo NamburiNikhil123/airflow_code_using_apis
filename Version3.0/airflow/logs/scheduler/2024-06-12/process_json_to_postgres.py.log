@@ -1,0 +1,604 @@
+[2024-06-12T05:13:51.407+0000] {processor.py:161} INFO - Started process (PID=239) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:13:51.408+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:13:51.410+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:13:51.409+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:13:51.423+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:13:51.418+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 12, in <module>
+    'retry_delay': timedelta(minutes=1),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:13:51.428+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:13:51.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.049 seconds
+[2024-06-12T05:14:21.589+0000] {processor.py:161} INFO - Started process (PID=247) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:21.593+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:14:21.594+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:14:21.594+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:21.609+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:14:21.604+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 12, in <module>
+    'retry_delay': timedelta(minutes=1),
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:14:21.614+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:21.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.060 seconds
+[2024-06-12T05:14:30.703+0000] {processor.py:161} INFO - Started process (PID=249) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:30.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:14:30.711+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:14:30.710+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:30.729+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:14:30.721+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 12, in <module>
+    'retry_delay': timedelta(minutes=1)
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:14:30.737+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:30.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.062 seconds
+[2024-06-12T05:14:35.761+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:35.765+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:14:35.767+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:14:35.767+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:35.781+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:14:35.775+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 12, in <module>
+    'retry_delay': timedelta(minutes=1)
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:14:35.786+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:14:35.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.049 seconds
+[2024-06-12T05:15:05.923+0000] {processor.py:161} INFO - Started process (PID=264) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:15:05.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:15:05.926+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:15:05.926+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:15:05.939+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:15:05.934+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 12, in <module>
+    'retry_delay': timedelta(minutes=1)
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:15:05.944+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:15:05.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.050 seconds
+[2024-06-12T05:15:36.086+0000] {processor.py:161} INFO - Started process (PID=272) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:15:36.087+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:15:36.089+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:15:36.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:15:36.100+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:15:36.096+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 12, in <module>
+    'retry_delay': timedelta(minutes=1)
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:15:36.105+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:15:36.123+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.046 seconds
+[2024-06-12T05:16:06.238+0000] {processor.py:161} INFO - Started process (PID=281) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:06.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:16:06.243+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:06.243+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:06.257+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:06.251+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 12, in <module>
+    'retry_delay': timedelta(minutes=1)
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:16:06.261+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:06.281+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.049 seconds
+[2024-06-12T05:16:19.330+0000] {processor.py:161} INFO - Started process (PID=282) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:19.331+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:16:19.332+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:19.332+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:19.340+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:19.338+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 4, in <module>
+    from datetime import datetime,ti
+ImportError: cannot import name 'ti' from 'datetime' (/usr/local/lib/python3.12/datetime.py)
+[2024-06-12T05:16:19.340+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:19.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.030 seconds
+[2024-06-12T05:16:21.350+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:21.351+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:16:21.353+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:21.353+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:21.369+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:21.473+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:21.473+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:16:21.483+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:21.483+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:16:21.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.157 seconds
+[2024-06-12T05:16:51.551+0000] {processor.py:161} INFO - Started process (PID=290) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:51.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:16:51.555+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:51.554+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:51.570+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:16:51.599+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:51.599+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:16:51.614+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:16:51.614+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:16:51.635+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.091 seconds
+[2024-06-12T05:17:21.884+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:17:21.889+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:17:21.894+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:17:21.894+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:17:21.915+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:17:21.945+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:17:21.945+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:17:21.962+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:17:21.962+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:17:21.983+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.119 seconds
+[2024-06-12T05:17:52.209+0000] {processor.py:161} INFO - Started process (PID=306) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:17:52.211+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:17:52.214+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:17:52.214+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:17:52.233+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:17:52.272+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:17:52.272+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:17:52.290+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:17:52.290+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:17:52.311+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.122 seconds
+[2024-06-12T05:18:22.556+0000] {processor.py:161} INFO - Started process (PID=314) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:18:22.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:18:22.563+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:18:22.563+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:18:22.580+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:18:22.609+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:18:22.609+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:18:22.624+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:18:22.624+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:18:22.653+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.117 seconds
+[2024-06-12T05:18:52.921+0000] {processor.py:161} INFO - Started process (PID=322) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:18:52.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:18:52.929+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:18:52.928+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:18:52.947+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:18:52.974+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:18:52.973+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:18:52.989+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:18:52.988+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:18:53.008+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.104 seconds
+[2024-06-12T05:19:21.175+0000] {processor.py:161} INFO - Started process (PID=330) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:21.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:21.177+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:21.177+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:21.192+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:21.295+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:21.294+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:19:21.304+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:21.304+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:19:21.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.151 seconds
+[2024-06-12T05:19:22.255+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:22.257+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:22.261+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:22.260+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:22.279+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:22.291+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:22.290+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:19:22.304+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:22.303+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:19:22.321+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.084 seconds
+[2024-06-12T05:19:48.524+0000] {processor.py:161} INFO - Started process (PID=339) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:48.530+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:48.535+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:48.534+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:48.556+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:48.550+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 13, in <module>
+    'retry_delay': timedelta(minutes=1)
+                   ^^^^^^^^^
+NameError: name 'timedelta' is not defined
+[2024-06-12T05:19:48.561+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:48.578+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.071 seconds
+[2024-06-12T05:19:52.555+0000] {processor.py:161} INFO - Started process (PID=340) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:52.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:52.558+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:52.557+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:52.562+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:52.561+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1129, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1059, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 5
+    from datetime import datetime,
+                                  ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+[2024-06-12T05:19:52.563+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:52.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.041 seconds
+[2024-06-12T05:19:53.591+0000] {processor.py:161} INFO - Started process (PID=341) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:53.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:53.597+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:53.596+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:53.611+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:53.609+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 5, in <module>
+    from datetime import datetime,d
+ImportError: cannot import name 'd' from 'datetime' (/usr/local/lib/python3.12/datetime.py)
+[2024-06-12T05:19:53.611+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:53.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.056 seconds
+[2024-06-12T05:19:56.645+0000] {processor.py:161} INFO - Started process (PID=342) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:56.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:56.651+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:56.651+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:56.660+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:56.658+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 5, in <module>
+    from datetime import datetime,t
+ImportError: cannot import name 't' from 'datetime' (/usr/local/lib/python3.12/datetime.py)
+[2024-06-12T05:19:56.660+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:56.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.036 seconds
+[2024-06-12T05:19:57.670+0000] {processor.py:161} INFO - Started process (PID=343) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:57.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:57.672+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:57.672+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:57.678+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:57.677+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/process_json_to_postgres.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/process_json_to_postgres.py", line 5, in <module>
+    from datetime import datetime,tim
+ImportError: cannot import name 'tim' from 'datetime' (/usr/local/lib/python3.12/datetime.py). Did you mean: 'time'?
+[2024-06-12T05:19:57.679+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:57.694+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.029 seconds
+[2024-06-12T05:19:59.738+0000] {processor.py:161} INFO - Started process (PID=344) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:59.739+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:19:59.743+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:59.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:59.759+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:19:59.858+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:59.858+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:19:59.868+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:19:59.868+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:19:59.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.164 seconds
+[2024-06-12T05:20:29.927+0000] {processor.py:161} INFO - Started process (PID=352) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:20:29.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:20:29.930+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:20:29.929+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:20:29.939+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:20:29.961+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:20:29.961+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:20:29.973+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:20:29.973+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:20:29.989+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.066 seconds
+[2024-06-12T05:21:00.210+0000] {processor.py:161} INFO - Started process (PID=360) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:21:00.215+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:21:00.218+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:21:00.218+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:21:00.240+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:21:00.266+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:21:00.266+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:21:00.279+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:21:00.278+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:21:00.297+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.103 seconds
+[2024-06-12T05:21:30.510+0000] {processor.py:161} INFO - Started process (PID=368) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:21:30.511+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:21:30.513+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:21:30.513+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:21:30.525+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:21:30.550+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:21:30.550+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:21:30.566+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:21:30.566+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:21:30.586+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.081 seconds
+[2024-06-12T05:22:00.819+0000] {processor.py:161} INFO - Started process (PID=376) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:22:00.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:22:00.825+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:22:00.824+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:22:00.844+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:22:00.873+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:22:00.872+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:22:00.888+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:22:00.887+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:22:00.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.101 seconds
+[2024-06-12T05:22:31.136+0000] {processor.py:161} INFO - Started process (PID=384) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:22:31.140+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:22:31.142+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:22:31.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:22:31.154+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:22:31.181+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:22:31.181+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:22:31.196+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:22:31.196+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:22:31.216+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.086 seconds
+[2024-06-12T05:23:01.428+0000] {processor.py:161} INFO - Started process (PID=392) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:01.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:23:01.434+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:01.434+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:01.448+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:01.479+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:01.479+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:23:01.496+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:01.495+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:23:01.519+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.097 seconds
+[2024-06-12T05:23:21.660+0000] {processor.py:161} INFO - Started process (PID=399) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:21.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:23:21.664+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:21.663+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:21.683+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:21.707+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:21.707+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:23:21.719+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:21.719+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:23:21.738+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.085 seconds
+[2024-06-12T05:23:51.964+0000] {processor.py:161} INFO - Started process (PID=406) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:51.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:23:51.972+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:51.971+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:51.993+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:23:52.026+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:52.026+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:23:52.043+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:23:52.043+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:23:52.067+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.112 seconds
+[2024-06-12T05:24:22.257+0000] {processor.py:161} INFO - Started process (PID=414) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:24:22.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:24:22.263+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:24:22.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:24:22.276+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:24:22.304+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:24:22.303+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:24:22.319+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:24:22.319+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:24:22.339+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.089 seconds
+[2024-06-12T05:24:52.559+0000] {processor.py:161} INFO - Started process (PID=422) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:24:52.561+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:24:52.562+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:24:52.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:24:52.575+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:24:52.602+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:24:52.601+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:24:52.615+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:24:52.614+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:24:52.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.079 seconds
+[2024-06-12T05:25:22.862+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:25:22.864+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:25:22.866+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:25:22.865+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:25:22.881+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:25:22.906+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:25:22.906+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:25:22.919+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:25:22.919+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:25:22.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.081 seconds
+[2024-06-12T05:25:53.151+0000] {processor.py:161} INFO - Started process (PID=438) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:25:53.155+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:25:53.160+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:25:53.159+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:25:53.170+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:25:53.193+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:25:53.192+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:25:53.204+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:25:53.204+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:25:53.220+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.073 seconds
+[2024-06-12T05:26:23.431+0000] {processor.py:161} INFO - Started process (PID=446) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:26:23.435+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:26:23.438+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:26:23.437+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:26:23.456+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:26:23.484+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:26:23.484+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:26:23.498+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:26:23.498+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:26:23.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.092 seconds
+[2024-06-12T05:26:53.749+0000] {processor.py:161} INFO - Started process (PID=454) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:26:53.754+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:26:53.758+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:26:53.757+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:26:53.784+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:26:53.809+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:26:53.809+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:26:53.823+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:26:53.822+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:26:53.841+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.098 seconds
+[2024-06-12T05:27:24.062+0000] {processor.py:161} INFO - Started process (PID=461) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:27:24.067+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:27:24.072+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:27:24.071+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:27:24.105+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:27:24.133+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:27:24.132+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:27:24.145+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:27:24.145+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:27:24.160+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.114 seconds
+[2024-06-12T05:27:54.377+0000] {processor.py:161} INFO - Started process (PID=469) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:27:54.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:27:54.381+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:27:54.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:27:54.399+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:27:54.423+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:27:54.423+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:27:54.437+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:27:54.436+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:27:54.453+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.087 seconds
+[2024-06-12T05:28:13.501+0000] {processor.py:161} INFO - Started process (PID=477) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:28:13.505+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:28:13.506+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:28:13.506+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:28:13.517+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:28:13.538+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:28:13.537+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:28:13.549+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:28:13.549+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:28:13.566+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.070 seconds
+[2024-06-12T05:28:43.834+0000] {processor.py:161} INFO - Started process (PID=485) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:28:43.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:28:43.840+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:28:43.840+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:28:43.856+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:28:43.881+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:28:43.881+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:28:43.894+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:28:43.893+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:28:43.910+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.093 seconds
+[2024-06-12T05:29:14.147+0000] {processor.py:161} INFO - Started process (PID=492) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:14.151+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:29:14.152+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:14.152+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:14.163+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:14.183+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:14.183+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:29:14.194+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:14.194+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:29:14.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.068 seconds
+[2024-06-12T05:29:44.399+0000] {processor.py:161} INFO - Started process (PID=500) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:44.403+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:29:44.405+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:44.405+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:44.418+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:44.442+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:44.442+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:29:44.457+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:44.456+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:29:44.476+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.084 seconds
+[2024-06-12T05:29:48.439+0000] {processor.py:161} INFO - Started process (PID=501) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:48.440+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:29:48.441+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:48.441+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:48.455+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:48.478+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:48.478+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:29:48.491+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:48.491+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:29:48.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.077 seconds
+[2024-06-12T05:29:52.539+0000] {processor.py:161} INFO - Started process (PID=502) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:52.540+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:29:52.542+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:52.541+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:52.552+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:29:52.647+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:52.646+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:process_json_to_postgres1
+[2024-06-12T05:29:52.657+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:52.657+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:process_json_to_postgres1
+[2024-06-12T05:29:52.664+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:52.664+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:process_json_to_postgres1
+[2024-06-12T05:29:52.665+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:52.665+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:29:52.678+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:52.678+0000] {dag.py:3118} INFO - Creating ORM DAG for process_json_to_postgres1
+[2024-06-12T05:29:52.679+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:29:52.678+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:29:52.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.161 seconds
+[2024-06-12T05:30:22.765+0000] {processor.py:161} INFO - Started process (PID=510) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:30:22.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:30:22.769+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:30:22.769+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:30:22.782+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:30:22.808+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:30:22.807+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:30:22.821+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:30:22.820+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:30:22.837+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.081 seconds
+[2024-06-12T05:30:53.064+0000] {processor.py:161} INFO - Started process (PID=518) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:30:53.066+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:30:53.070+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:30:53.069+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:30:53.088+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:30:53.120+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:30:53.120+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:30:53.134+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:30:53.134+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:30:53.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.105 seconds
+[2024-06-12T05:31:23.319+0000] {processor.py:161} INFO - Started process (PID=527) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:31:23.323+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:31:23.323+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:31:23.323+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:31:23.335+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:31:23.358+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:31:23.358+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:31:23.371+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:31:23.370+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:31:23.387+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.073 seconds
+[2024-06-12T05:31:53.625+0000] {processor.py:161} INFO - Started process (PID=535) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:31:53.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:31:53.633+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:31:53.632+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:31:53.654+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:31:53.678+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:31:53.678+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:31:53.690+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:31:53.690+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:31:53.706+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.100 seconds
+[2024-06-12T05:32:23.912+0000] {processor.py:161} INFO - Started process (PID=542) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:32:23.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:32:23.915+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:32:23.915+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:32:23.931+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:32:23.956+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:32:23.956+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:32:23.968+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:32:23.968+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:32:23.986+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.093 seconds
+[2024-06-12T05:32:54.159+0000] {processor.py:161} INFO - Started process (PID=550) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:32:54.163+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:32:54.165+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:32:54.165+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:32:54.196+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:32:54.221+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:32:54.221+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:32:54.233+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:32:54.232+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:32:54.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.096 seconds
+[2024-06-12T05:33:24.458+0000] {processor.py:161} INFO - Started process (PID=558) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:33:24.462+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:33:24.463+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:33:24.463+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:33:24.477+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:33:24.505+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:33:24.505+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:33:24.523+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:33:24.523+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:33:24.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.088 seconds
+[2024-06-12T05:33:54.769+0000] {processor.py:161} INFO - Started process (PID=566) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:33:54.774+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:33:54.777+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:33:54.776+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:33:54.803+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:33:54.828+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:33:54.828+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:33:54.840+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:33:54.840+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:33:54.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.100 seconds
+[2024-06-12T05:34:25.088+0000] {processor.py:161} INFO - Started process (PID=574) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:34:25.093+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:34:25.094+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:34:25.094+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:34:25.114+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:34:25.139+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:34:25.139+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:34:25.151+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:34:25.151+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:34:25.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.092 seconds
+[2024-06-12T05:34:55.375+0000] {processor.py:161} INFO - Started process (PID=582) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:34:55.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:34:55.382+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:34:55.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:34:55.408+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:34:55.435+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:34:55.434+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:34:55.447+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:34:55.447+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:34:55.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.103 seconds
+[2024-06-12T05:35:25.652+0000] {processor.py:161} INFO - Started process (PID=590) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:35:25.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:35:25.657+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:35:25.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:35:25.671+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:35:25.697+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:35:25.697+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:35:25.711+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:35:25.711+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:35:25.727+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.080 seconds
+[2024-06-12T05:35:55.948+0000] {processor.py:161} INFO - Started process (PID=598) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:35:55.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:35:55.956+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:35:55.955+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:35:55.979+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:35:56.002+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:35:56.002+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:35:56.015+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:35:56.014+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:35:56.030+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.098 seconds
+[2024-06-12T05:36:26.193+0000] {processor.py:161} INFO - Started process (PID=606) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:36:26.197+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:36:26.198+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:36:26.198+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:36:26.212+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:36:26.241+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:36:26.240+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:36:26.256+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:36:26.255+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:36:26.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.085 seconds
+[2024-06-12T05:36:56.516+0000] {processor.py:161} INFO - Started process (PID=613) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:36:56.521+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:36:56.524+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:36:56.523+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:36:56.548+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:36:56.573+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:36:56.572+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:36:56.585+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:36:56.585+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:36:56.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.106 seconds
+[2024-06-12T05:37:16.737+0000] {processor.py:161} INFO - Started process (PID=622) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:16.741+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:37:16.743+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:16.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:16.763+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:16.787+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:16.786+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:37:16.799+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:16.798+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:37:16.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.096 seconds
+[2024-06-12T05:37:17.815+0000] {processor.py:161} INFO - Started process (PID=623) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:17.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:37:17.819+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:17.818+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:17.843+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:17.869+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:17.868+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:37:17.882+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:17.882+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:37:17.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.105 seconds
+[2024-06-12T05:37:18.881+0000] {processor.py:161} INFO - Started process (PID=624) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:18.883+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:37:18.885+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:18.884+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:18.903+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:18.930+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:18.930+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:37:18.944+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:18.944+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:37:18.964+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.101 seconds
+[2024-06-12T05:37:49.141+0000] {processor.py:161} INFO - Started process (PID=633) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:49.144+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:37:49.145+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:49.145+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:49.155+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres1' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:49.175+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:49.175+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:37:49.187+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:49.186+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres1 to None, run_after=None
+[2024-06-12T05:37:49.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.068 seconds
+[2024-06-12T05:37:50.149+0000] {processor.py:161} INFO - Started process (PID=634) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:50.150+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:37:50.151+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:50.151+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:50.162+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres2' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:37:50.255+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:50.254+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:process_json_to_postgres2
+[2024-06-12T05:37:50.265+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:50.265+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:process_json_to_postgres2
+[2024-06-12T05:37:50.271+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:50.270+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:process_json_to_postgres2
+[2024-06-12T05:37:50.271+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:50.271+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:37:50.281+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:50.281+0000] {dag.py:3118} INFO - Creating ORM DAG for process_json_to_postgres2
+[2024-06-12T05:37:50.281+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:37:50.281+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres2 to None, run_after=None
+[2024-06-12T05:37:50.295+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.151 seconds
+[2024-06-12T05:38:20.502+0000] {processor.py:161} INFO - Started process (PID=642) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:38:20.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:38:20.506+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:38:20.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:38:20.523+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres2' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:38:20.547+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:38:20.547+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:38:20.559+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:38:20.559+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres2 to None, run_after=None
+[2024-06-12T05:38:20.575+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.091 seconds
+[2024-06-12T05:38:50.781+0000] {processor.py:161} INFO - Started process (PID=650) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:38:50.783+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:38:50.784+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:38:50.784+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:38:50.802+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres2' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:38:50.826+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:38:50.826+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:38:50.840+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:38:50.840+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres2 to None, run_after=None
+[2024-06-12T05:38:50.856+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.092 seconds
+[2024-06-12T05:39:21.253+0000] {processor.py:161} INFO - Started process (PID=659) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:39:21.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:39:21.255+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:39:21.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:39:21.270+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres2' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:39:21.296+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:39:21.295+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:39:21.309+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:39:21.308+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres2 to None, run_after=None
+[2024-06-12T05:39:21.325+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.081 seconds
+[2024-06-12T05:39:51.773+0000] {processor.py:161} INFO - Started process (PID=669) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:39:51.778+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:39:51.780+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:39:51.779+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:39:51.800+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres2' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:39:51.832+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:39:51.831+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:39:51.849+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:39:51.848+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres2 to None, run_after=None
+[2024-06-12T05:39:51.871+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.117 seconds
+[2024-06-12T05:40:14.959+0000] {processor.py:161} INFO - Started process (PID=676) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:14.960+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:40:14.961+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:14.960+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:14.974+0000] {processor.py:840} INFO - DAG(s) 'process_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:15.150+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:15.149+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:40:15.162+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:15.162+0000] {dag.py:3954} INFO - Setting next_dagrun for process_json_to_postgres to None, run_after=None
+[2024-06-12T05:40:15.181+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.230 seconds
+[2024-06-12T05:40:36.145+0000] {processor.py:161} INFO - Started process (PID=677) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:36.145+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:40:36.146+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:36.146+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:36.156+0000] {processor.py:840} INFO - DAG(s) 'manual_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:36.252+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:36.251+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:manual_json_to_postgres
+[2024-06-12T05:40:36.261+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:36.261+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:manual_json_to_postgres
+[2024-06-12T05:40:36.267+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:36.266+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:manual_json_to_postgres
+[2024-06-12T05:40:36.267+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:36.267+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:40:36.277+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:36.277+0000] {dag.py:3118} INFO - Creating ORM DAG for manual_json_to_postgres
+[2024-06-12T05:40:36.278+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:36.278+0000] {dag.py:3954} INFO - Setting next_dagrun for manual_json_to_postgres to None, run_after=None
+[2024-06-12T05:40:36.293+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.152 seconds
+[2024-06-12T05:40:52.219+0000] {processor.py:161} INFO - Started process (PID=685) to work on /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:52.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/process_json_to_postgres.py for tasks to queue
+[2024-06-12T05:40:52.222+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:52.221+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:52.238+0000] {processor.py:840} INFO - DAG(s) 'manual_json_to_postgres' retrieved from /opt/airflow/dags/process_json_to_postgres.py
+[2024-06-12T05:40:52.249+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:52.249+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-06-12T05:40:52.262+0000] {logging_mixin.py:188} INFO - [2024-06-12T05:40:52.262+0000] {dag.py:3954} INFO - Setting next_dagrun for manual_json_to_postgres to None, run_after=None
+[2024-06-12T05:40:52.282+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/process_json_to_postgres.py took 0.068 seconds
